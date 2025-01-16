@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-
 const navigation = [
     { name: 'Experience', href: '#' },
     { name: 'Projects', href: '#' },
-    { name: 'Get in touch', href: '#' },
+    { name: 'Stack', href: '#' },
+    { name: 'Contact', href: '#' },
   ]
 
 
@@ -17,8 +17,6 @@ export default function Header() {
     return ( 
             
         <header className="absolute inset-x-0 top-0 z-50">
-
-
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8">
 
                 {/* <div className="flex lg:flex-1">
@@ -43,9 +41,9 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className="hidden lg:flex lg:gap-x-12">
+                <div className="hidden lg:flex lg:gap-x-12 bg-amber-100 bg-opacity-80 rounded-2xl px-6 py-2 fixed top-8">
                 {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+                    <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-green-900">
                     {item.name}
                     </a>
                 ))}
@@ -56,7 +54,6 @@ export default function Header() {
                     Log in <span aria-hidden="true">&rarr;</span>
                 </a>
                 </div> */}
-
             </nav>
             
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -93,19 +90,20 @@ export default function Header() {
                         </a>
                         ))}
                     </div>
-                    <div className="py-6">
+
+                    {/* <div className="py-6">
                         <a
                         href="#"
                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                         >
                         Log in
                         </a>
-                    </div>
+                        </div> */}
+                    
                     </div>
                 </div>
                 </DialogPanel>
             </Dialog>
         </header>
-
      );
 }
