@@ -3,6 +3,8 @@ import Header from './components/header'
 import Hero from './components/hero'
 import Timeline from './components/timeline'
 import Footer from './components/footer'
+import Projects from './components/projects'
+import Stack from './components/stack'
 
 
 export default function App() {
@@ -13,6 +15,8 @@ export default function App() {
         <main className="isolate">
           <Hero/>
           <Timeline/>
+          <Projects/>
+          <Stack/>
 
           {/* contact me */}
           <div className="relative isolate bg-gray-900">
