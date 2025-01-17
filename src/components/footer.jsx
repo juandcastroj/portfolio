@@ -91,12 +91,12 @@ const footerNavigation = {
 
 export default function Footer () {
 
-    return(
-        <footer className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 lg:px-8">
 
+    return(
+        <footer className="mx-auto mt-16 max-w-7xl px-6 sm:mt-0 lg:px-8">
         <div className="pb-8">
 
-          <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
+          <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-0 md:flex md:items-center md:justify-between">
             <div className="flex gap-x-6 md:order-2">
               {footerNavigation.social.map((item) => (
                 <a key={item.name} href={item.href} className="text-gray-600 hover:text-gray-800">

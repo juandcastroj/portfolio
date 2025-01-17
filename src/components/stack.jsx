@@ -75,13 +75,12 @@ const people = [
   ]
   
 
-
   export default function Stack() {
     return (
       <div className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">My stack</h2>
+            <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 sm:text-5xl">My stack</h2>
             <p className="mt-6 text-lg/8 text-gray-600">
               We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
               best results for our clients.
@@ -95,7 +94,7 @@ const people = [
             {people.map((tech) => (
               <li key={tech.name}>
                 <img alt="" src={tech.imageUrl} className="mx-auto size-28 rounded-md" />
-                <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">{tech.name}</h3>
+                <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-green-900">{tech.name}</h3>
                 <p className="text-sm/6 text-gray-600">{tech.role}</p>
               </li>
             ))}
