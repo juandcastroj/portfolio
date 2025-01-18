@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import ThemeSwitcher from './themeSwitcher'
+
 
 const navigation = [
-    { name: 'Experience', href: '#' },
-    { name: 'Projects', href: '#' },
-    { name: 'Stack', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Experience', href: '#timeLine' },
+    { name: 'Projects', href: '#Projects' },
+    { name: 'Stack', href: '#Stack' },
+    { name: 'Contact', href: '#Contact' },
   ]
 
 
@@ -41,13 +43,16 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className="hidden lg:flex lg:gap-x-12 bg-amber-100 bg-opacity-80 rounded-2xl px-6 py-2 fixed top-8">
+                <div className="hidden lg:flex lg:gap-x-12 bg-amber-100 dark:bg-blue-200 bg-opacity-80 rounded-2xl px-6 py-2 fixed top-8">
                 {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-green-900">
+                    <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-green-900 dark:text-gray-600">
                     {item.name}
                     </a>
                 ))}
                 </div>
+
+               
+                <ThemeSwitcher/>
 
                 {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                 <a href="#" className="text-sm/6 font-semibold text-gray-900">
@@ -56,6 +61,7 @@ export default function Header() {
                 </div> */}
             </nav>
             
+
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-50" />
                 <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -104,6 +110,7 @@ export default function Header() {
                 </div>
                 </DialogPanel>
             </Dialog>
+
         </header>
      );
 }

@@ -43,13 +43,13 @@ const people = [
 
     
     return (
-      <div className="bg-white py-20 md:py-28">
+      <div id="Projects" className="py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
           <div className="max-w-2xl xl:col-span-2">
-            <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 sm:text-5xl">
+            <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-fuchsia-500 sm:text-5xl">
               My projects
             </h2>
-            <p className="mt-6 text-lg/8 text-gray-600">
+            <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
               We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
               best results for our clients.
             </p>
@@ -61,9 +61,9 @@ const people = [
               <li key={project.name} className="flex flex-col gap-10 pt-12 sm:flex-row">
                 <img alt="" src={project.imageUrl} className="aspect-square w-52 flex-none rounded-2xl object-cover" />
                 <div className="max-w-xl flex-auto">
-                  <h3 className="text-lg/8 font-semibold tracking-tight text-green-900">{project.name}</h3>
-                  <p className="text-base/7 text-gray-600">{project.role}</p>
-                  <p className="mt-6 text-base/7 text-gray-600">{project.bio}</p>
+                  <h3 className="text-lg/8 font-semibold tracking-tight text-green-900 dark:text-fuchsia-500">{project.name}</h3>
+                  <p className="text-base/7 text-gray-600 dark:text-gray-200">{project.role}</p>
+                  <p className="mt-6 text-base/7 text-gray-600 dark:text-gray-200">{project.bio}</p>
                   <ul role="list" className="mt-6 flex gap-x-6">
                     <li>
                       <a href={project.xUrl} className="text-gray-400 hover:text-gray-500">

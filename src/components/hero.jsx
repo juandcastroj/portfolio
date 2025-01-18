@@ -1,10 +1,15 @@
 export default function Hero() {
     
     return (
+
+
+
+
         <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+
         <div
           aria-hidden="true"
-          className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
+          className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white dark:bg-gray-800 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-[22rem]"
         />
 
         <div className="mx-auto max-w-6xl px-6 py-10 sm:py-28 lg:py-40 lg:px-8">
@@ -12,13 +17,16 @@ export default function Hero() {
           
           
           <div className="flex flex-col justify-between">
-            <h1 className="max-w-2xl text-balance text-3xl sm:text-5xl font-semibold tracking-tight text-green-900 lg:text-7xl lg:col-span-2 xl:col-auto">
-              Hi. I&#39;m Juan David Castro.
-              A Software developer.
+
+
+            <h1 className="max-w-2xl text-balance text-3xl sm:text-5xl font-semibold tracking-tight text-green-900 dark:text-fuchsia-500 lg:text-7xl lg:col-span-2 xl:col-auto">
+              Hi. I&#39;m Juan David Castro,
+              Software developer.
             </h1>
 
+
             <div className="my-2 sm:my-8 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-              <p className="text-pretty text-base sm:text-lg font-medium text-gray-500 md:text-xl/8 lg:mt-6">
+              <p className="text-pretty text-base sm:text-lg font-medium text-gray-500 dark:text-gray-200 md:text-xl/8 lg:mt-6">
                 Best known as JD, specialized on frontend web developer, 
                 lover of technology, music and bikes. Lets discover my work... 
               </p>
