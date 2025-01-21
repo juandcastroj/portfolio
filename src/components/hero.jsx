@@ -1,15 +1,12 @@
 export default function Hero() {
     
+  
     return (
 
-
-
-
         <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
-
         <div
           aria-hidden="true"
-          className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white dark:bg-gray-800 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-[22rem]"
+          className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white dark:bg-[#2b0076] shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 dark:ring-[#2b0076] sm:-mr-80 lg:-mr-[22rem]"
         />
 
         <div className="mx-auto max-w-6xl px-6 py-10 sm:py-28 lg:py-40 lg:px-8">
@@ -18,8 +15,7 @@ export default function Hero() {
           
           <div className="flex flex-col justify-between">
 
-
-            <h1 className="max-w-2xl text-balance text-3xl sm:text-5xl font-semibold tracking-tight text-green-900 dark:text-fuchsia-500 lg:text-7xl lg:col-span-2 xl:col-auto">
+            <h1 className="max-w-2xl text-balance text-3xl sm:text-5xl font-semibold tracking-tight text-green-900 dark:text-blue-300 lg:text-7xl lg:col-span-2 xl:col-auto">
               Hi. I&#39;m Juan David Castro,
               Software developer.
             </h1>
@@ -44,7 +40,8 @@ export default function Hero() {
           </div>
 
         </div>
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
+        
+        {/* <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" /> */}
       </div>
 
 

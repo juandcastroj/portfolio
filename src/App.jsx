@@ -10,9 +10,8 @@ import Contact from './components/contact'
 export default function App() {
 
   return (
-    <div className="bg-white dark:bg-gray-800">
+    <div className="bg-white dark:bg-[#2b0076]">
       <Header/>
-
         <main className="isolate">
           <Hero/>
           <Timeline/>

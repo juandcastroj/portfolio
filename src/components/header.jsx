@@ -5,10 +5,10 @@ import ThemeSwitcher from './themeSwitcher'
 
 
 const navigation = [
-    { name: 'Experience', href: '#timeLine' },
-    { name: 'Projects', href: '#Projects' },
-    { name: 'Stack', href: '#Stack' },
-    { name: 'Contact', href: '#Contact' },
+    { name: 'Experience', href: '#timeline-section' },
+    { name: 'Projects', href: '#projects-section' },
+    { name: 'Stack', href: '#stack-section' },
+    { name: 'Contact', href: '#contact-section' },
   ]
 
 
