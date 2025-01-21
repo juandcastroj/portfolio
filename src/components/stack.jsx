@@ -1,15 +1,15 @@
 const technologies = [
     {
-      name: 'Michael Foster',
+      name: 'HTML',
       role: 'Co-Founder / CTO',
       imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        'https://logospng.org/wp-content/uploads/html-5.png',
     },
     {
-        name: 'Michael Foster1',
+        name: 'CSS',
         role: 'Co-Founder / CTO',
         imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png',
       },
       {
         name: 'Michael Foster2',
@@ -78,7 +78,7 @@ const technologies = [
 
     return (
 
-      <div id="stack-section" className="py-16 sm:py-20">
+      <div id="stack" className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">My stack</h2>

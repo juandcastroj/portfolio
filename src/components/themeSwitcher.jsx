@@ -10,7 +10,7 @@ export default function ThemeSwitcher () {
 
     <button
       onClick={toggleTheme}
-      className="hidden lg:inline fixed top-8 right-8 px-4 py-2 bg-green-900 bg-opacity-80 dark:bg-blue-200 text-gray-200 dark:text-gray-800 rounded-md transition justify-end"
+      className="inline fixed top-4 lg:top-8 right-20 lg:right-8 px-4 py-2 bg-green-900 bg-opacity-80 dark:bg-blue-200 text-gray-200 dark:text-gray-800 rounded-md transition justify-end"
     >
       Change to {theme === "light" ? "Dark" : "Light"}
     </button>

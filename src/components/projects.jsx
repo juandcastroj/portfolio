@@ -44,7 +44,7 @@ const projects = [
     
     return (
 
-      <div id="projects-section" className="py-20 md:py-28">
+      <div id="projects" className="py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
           <div className="max-w-2xl xl:col-span-2">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
@@ -65,7 +65,8 @@ const projects = [
                   <h3 className="text-lg/8 font-semibold tracking-tight text-green-900 dark:text-blue-300">{project.name}</h3>
                   <p className="text-base/7 text-gray-600 dark:text-gray-200">{project.role}</p>
                   <p className="mt-6 text-base/7 text-gray-600 dark:text-gray-200">{project.bio}</p>
-                  <ul role="list" className="mt-6 flex gap-x-6">
+
+                  {/* <ul role="list" className="mt-6 flex gap-x-6">
                     <li>
                       <a href={project.xUrl} className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">X</span>
@@ -86,7 +87,8 @@ const projects = [
                         </svg>
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
+
                 </div>
               </li>
             ))}
