@@ -4,27 +4,35 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 
 export default function Contact() {
 
-  const [form, setForm] = useState({
-                            firstName : "",
-                            lastName : "",
-                            email : "",
-                            message : "",
-                          })
+      const [form, setForm] = useState({
+                                    firstName : "",
+                                    lastName : "",
+                                    email : "",
+                                    message : "",
+                                  })
 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("submit click ");  
-    console.log(form.firstName, form.lastName, form.email, form.message);   
-    setForm({
-      firstName : "",
-      lastName : "",
-      email : "",
-      message : "",
-    })
-  }
+      const handleChange = (e) => {
+        console.log(e.target.value);
+        console.log(e.target.name);
+        setForm({
+          ...form, 
+          [e.target.name]: e.target.value,
+        })
+      }
 
 
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("submit click ");  
+        console.log(form.firstName, form.lastName, form.email, form.message);   
+        setForm({
+                firstName : "",
+                lastName : "",
+                email : "",
+                message : "",
+              })
+      }
 
     return (
 
@@ -90,11 +98,11 @@ export default function Contact() {
                 <div className="mt-2.5">
                   <input
                     id="first-name"
-                    name="first-name"
+                    name="firstName"
                     type="text"
                     autoComplete="given-name"
                     value={form.firstName}
-                    onChange={(e) => setForm({...form, firstName : e.target.value})}
+                    onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
                 </div>
@@ -107,11 +115,11 @@ export default function Contact() {
                 <div className="mt-2.5">
                   <input
                     id="last-name"
-                    name="last-name"
+                    name="lastName"
                     type="text"
                     autoComplete="family-name"
                     value={form.lastName}
-                    onChange={(e) => setForm({...form, lastName : e.target.value})}
+                    onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
                 </div>
@@ -128,7 +136,7 @@ export default function Contact() {
                     type="email"
                     autoComplete="email"
                     value={form.email}
-                    onChange={(e) => setForm({...form, email : e.target.value})}
+                    onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
                 </div>
@@ -144,7 +152,7 @@ export default function Contact() {
                     name="message"
                     rows={4}
                     value={form.message}
-                    onChange={(e) => setForm({...form, message : e.target.value})}
+                    onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
                 </div>

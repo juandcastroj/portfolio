@@ -1,39 +1,39 @@
 const projects = [
     {
-      name: 'Leslie Alexander',
-      role: 'Co-Founder / CEO',
+      name: 'Interkey',
+      role: 'Frontend developer',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-      xUrl: '#',
-      linkedinUrl: '#',
+      description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      url: 'https://interkey2023.netlify.app/',
+      github: '#'    
     },
     {
-        name: 'Lionel messi',
-        role: 'Co-Founder / CEO',
+        name: 'Siin shop',
+        role: 'Frontend developer',
         imageUrl:
           'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        xUrl: '#',
-        linkedinUrl: '#',
+        description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+        url: 'https://gorgeous-cucurucho-749274.netlify.app/',
+      github: '#'
       },
       {
-        name: 'Crisitano ronaldo',
-        role: 'Co-Founder / CEO',
+        name: 'Tahsin ALwajiha',
+        role: 'Frontend developer',
         imageUrl:
           'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        xUrl: '#',
-        linkedinUrl: '#',
+        description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+        url: 'https://tahsinalwajiha.com/',
+        github: '#'
       },
       {
-        name: 'juanfer quintero',
-        role: 'Co-Founder / CEO',
+        name: 'CoffeeStrap',
+        role: 'Mobile developer',
         imageUrl:
-          'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        xUrl: '#',
-        linkedinUrl: '#',
+          '/src/assets/images/projects/WhatsApp Image 2025-01-22 at 9.18.53 PM.jpeg',
+        description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+        url: '#',
+        github: '#'
       },
     // More projects...
   ]
@@ -51,24 +51,26 @@ const projects = [
               My projects
             </h2>
             <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-              We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-              best results for our clients.
-            </p>
+            Below is a list view of my main and fully develop web and mobile jobs throughout my career as software developer.</p>
           </div>
 
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
             
-            {projects.map((project) => (
-              <li key={project.name} className="flex flex-col gap-10 pt-12 sm:flex-row">
-                <img alt="" src={project.imageUrl} className="aspect-square w-52 flex-none rounded-2xl object-cover" />
-                <div className="max-w-xl flex-auto">
-                  <h3 className="text-lg/8 font-semibold tracking-tight text-green-900 dark:text-blue-300">{project.name}</h3>
-                  <p className="text-base/7 text-gray-600 dark:text-gray-200">{project.role}</p>
-                  <p className="mt-6 text-base/7 text-gray-600 dark:text-gray-200">{project.bio}</p>
+            {projects.map((project, index) => (
+              <li key={index} className="flex flex-col gap-10 pt-12 sm:flex-row">
+                <iframe src={project.url} className="aspect-square w-[28rem] h-60 flex-none rounded-2xl object-cover"></iframe>
 
-                  {/* <ul role="list" className="mt-6 flex gap-x-6">
+                {/* <img alt={project.name} src="/src/assets/images/projects/image.png" className="aspect-auto w-52 flex-none rounded-2xl object-cover" /> */}
+                <div className="max-w-xl flex-auto">
+                  <a href={project.url}>  
+                    <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">{project.name}</h3>
+                 
+                  <p className="text-base/7 font-semibold text-gray-600 dark:text-gray-200">{project.role}</p>
+                  <p className="mt-1 text-base/7 text-gray-600 dark:text-gray-200">{project.description}</p>
+                  </a>
+                  <ul role="list" className="mt-3 flex gap-x-6">
                     <li>
-                      <a href={project.xUrl} className="text-gray-400 hover:text-gray-500">
+                      <a href={project.url} className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">X</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" className="size-5">
                           <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
@@ -76,7 +78,7 @@ const projects = [
                       </a>
                     </li>
                     <li>
-                      <a href={project.linkedinUrl} className="text-gray-400 hover:text-gray-500">
+                      <a href={project.github} className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">LinkedIn</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" className="size-5">
                           <path
@@ -87,7 +89,7 @@ const projects = [
                         </svg>
                       </a>
                     </li>
-                  </ul> */}
+                  </ul>
 
                 </div>
               </li>
