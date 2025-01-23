@@ -11,21 +11,25 @@ export default function Contact() {
                                     message : "",
                                   })
 
+      const [error, setError] = useState(false);
 
-      const handleChange = (e) => {
-        console.log(e.target.value);
-        console.log(e.target.name);
-        setForm({
-          ...form, 
-          [e.target.name]: e.target.value,
-        })
-      }
-
+      const { firstName, lastName, email, message} = form;
 
       const handleSubmit = (e) => {
         e.preventDefault();
         console.log("submit click ");  
-        console.log(form.firstName, form.lastName, form.email, form.message);   
+
+          // fast validation
+          if (!firstName.trim() || !lastName.trim() || !email.trim() || !message.trim()) {
+            console.log("campos vacíos");
+            setError(true);
+            return;
+          } else {
+            setError(false);
+          }
+
+
+        console.log(firstName, lastName, email, message);   
         setForm({
                 firstName : "",
                 lastName : "",
@@ -33,6 +37,19 @@ export default function Contact() {
                 message : "",
               })
       }
+
+      const handleChange = (e) => {
+        setForm({
+          ...form, 
+          [e.target.name]: e.target.value,
+        })
+      }
+
+
+      const ShowError = () => (
+        <div className="mx-6 text-red-600 my-2">Todos los campos obligatorios</div>
+      );
+
 
     return (
 
@@ -101,7 +118,7 @@ export default function Contact() {
                     name="firstName"
                     type="text"
                     autoComplete="given-name"
-                    value={form.firstName}
+                    value={firstName}
                     onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
@@ -118,7 +135,7 @@ export default function Contact() {
                     name="lastName"
                     type="text"
                     autoComplete="family-name"
-                    value={form.lastName}
+                    value={lastName}
                     onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
@@ -135,7 +152,7 @@ export default function Contact() {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    value={form.email}
+                    value={email}
                     onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
@@ -151,7 +168,7 @@ export default function Contact() {
                     id="message"
                     name="message"
                     rows={4}
-                    value={form.message}
+                    value={message}
                     onChange={handleChange}
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
@@ -159,13 +176,16 @@ export default function Contact() {
               </div>
             </div>
             <div className="mt-8 flex justify-end">
+
+            {error && <ShowError/>}  
               
               <button
                 type="submit"
-                className="rounded-md bg-green-900 dark:bg-blue-200 px-3.5 py-2.5 text-center text-sm font-semibold text-white dark:text-gray-800 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-green-900 dark:bg-blue-200 px-3.5 py-2.5 text-center text-sm font-semibold text-white dark:text-gray-800 shadow-sm hover:bg-green-700 dark:hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Send message
               </button>
+
             </div>
           </div>
         </form>

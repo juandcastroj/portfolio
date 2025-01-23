@@ -1,75 +1,75 @@
 const technologies = [
     {
       name: 'HTML',
-      role: 'Co-Founder / CTO',
-      imageUrl:
-        'https://logospng.org/wp-content/uploads/html-5.png',
+      level: '',
+      logoUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png',
     },
     {
         name: 'CSS',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png',
+        level: '',
+        logoUrl:
+          'https://kintinstitute.org/wp-content/uploads/2016/03/css-logo.png',
       },
       {
-        name: 'Michael Foster2',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Javascript',
+        level: '',
+        logoUrl:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
       },
       {
-        name: 'Michael Foster3',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'React js',
+        level: '',
+        logoUrl:
+          'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg',
       },
       {
-        name: 'Michael Foster4',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Tailwind css',
+        level: '',
+        logoUrl:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png',
       },
       {
-        name: 'Michael Foster5',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Github',
+        level: '',
+        logoUrl:
+          'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
       },
       {
-        name: 'Michael Foster6',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Vue js',
+        level: '',
+        logoUrl:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png',
       },
       {
-        name: 'Michael Foster7',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Flutter',
+        level: '',
+        logoUrl:
+          'https://cdn.iconscout.com/icon/free/png-256/free-flutter-logo-icon-download-in-svg-png-gif-file-formats--programming-language-coding-development-logos-icons-1720090.png?f=webp',
       },
       {
-        name: 'Michael Foster8',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Node js',
+        level: '',
+        logoUrl:
+          'https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png',
       },
       {
-        name: 'Michael Foster9',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Postgres',
+        level: '',
+        logoUrl:
+          'https://images.seeklogo.com/logo-png/27/2/postqresql-logo-png_seeklogo-273812.png',
       },
       {
-        name: 'Michael Foster0',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'AWS',
+        level: '',
+        logoUrl:
+          'https://figmaresource.com/wp-content/uploads/2024/05/AWS-Marketplace-Logo-PNG-to-svg-1.svg',
       },
       {
-        name: 'Michael Foster11',
-        role: 'Co-Founder / CTO',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        name: 'Canva',
+        level: '',
+        logoUrl:
+          'https://oregoncoast.edu/wp-content/uploads/2024/02/canva-logo.png',
       },
     // More technologies...
   ]
@@ -94,9 +94,9 @@ const technologies = [
 
             {technologies.map((tech) => (
               <li key={tech.name}>
-                <img alt="" src={tech.imageUrl} className="mx-auto size-28 rounded-md" />
+                <img alt="" src={tech.logoUrl} className="mx-auto size-28 rounded-md" />
                 <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-green-900 dark:text-blue-300">{tech.name}</h3>
-                <p className="text-sm/6 text-gray-600 dark:text-gray-200">{tech.role}</p>
+                {/* <p className="text-sm/6 text-gray-600 dark:text-gray-200">{tech.level}</p> */}
               </li>
             ))}
           </ul>

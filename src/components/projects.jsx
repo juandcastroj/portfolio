@@ -32,10 +32,10 @@ const projects = [
         imageUrl:
           '/src/assets/images/projects/WhatsApp Image 2025-01-22 at 9.18.53 PM.jpeg',
         description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        url: '#',
+        url: 'https://www.sessionforward.com/',
         github: '#'
       },
-    // More projects...
+
   ]
   
 
@@ -45,29 +45,31 @@ const projects = [
     return (
 
       <div id="projects" className="py-20 md:py-28">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
-          <div className="max-w-2xl xl:col-span-2">
+        <div className="mx-auto max-w-7xl gap-20 px-6 lg:px-8">
+
+          <div className="max-w-2xl xl:col-span-2 mb-12">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
-              My projects
+              Main projects
             </h2>
+            
             <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
             Below is a list view of my main and fully develop web and mobile jobs throughout my career as software developer.</p>
           </div>
 
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
-            
             {projects.map((project, index) => (
               <li key={index} className="flex flex-col gap-10 pt-12 sm:flex-row">
-                <iframe src={project.url} className="aspect-square w-[28rem] h-60 flex-none rounded-2xl object-cover"></iframe>
+                <iframe src={project.url} className="aspect-square w-[40rem] h-60 flex-none rounded-2xl object-cover"></iframe>
 
                 {/* <img alt={project.name} src="/src/assets/images/projects/image.png" className="aspect-auto w-52 flex-none rounded-2xl object-cover" /> */}
                 <div className="max-w-xl flex-auto">
                   <a href={project.url}>  
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">{project.name}</h3>
                  
-                  <p className="text-base/7 font-semibold text-gray-600 dark:text-gray-200">{project.role}</p>
-                  <p className="mt-1 text-base/7 text-gray-600 dark:text-gray-200">{project.description}</p>
+                    <p className="text-base/7 font-semibold text-gray-600 dark:text-gray-200">{project.role}</p>
+                    <p className="mt-1 text-base/7 text-gray-600 dark:text-gray-200">{project.description}</p>
                   </a>
+                  
                   <ul role="list" className="mt-3 flex gap-x-6">
                     <li>
                       <a href={project.url} className="text-gray-400 hover:text-gray-500">
@@ -95,6 +97,7 @@ const projects = [
               </li>
             ))}
           </ul>
+
         </div>
       </div>
     )

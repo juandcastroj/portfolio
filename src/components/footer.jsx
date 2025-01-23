@@ -2,7 +2,7 @@
 const social = [
     {
       name: 'LinkedIn',
-      href: '#',
+      href: 'https://www.linkedin.com/in/juan-david-castro-025749a6/',
       icon: (props) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                 <path
@@ -15,7 +15,7 @@ const social = [
     },
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/juandcastroj',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
