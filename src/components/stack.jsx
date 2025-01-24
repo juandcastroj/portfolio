@@ -3,73 +3,73 @@ const technologies = [
       name: 'HTML',
       level: '',
       logoUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png',
+        '/src/assets/images/techs/HTML5_logo.png',
     },
     {
         name: 'CSS',
         level: '',
         logoUrl:
-          'https://kintinstitute.org/wp-content/uploads/2016/03/css-logo.png',
+          '/src/assets/images/techs/CSS_logo.png',
       },
       {
         name: 'Javascript',
         level: '',
         logoUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png',
+          '/src/assets/images/techs/JavaScript_logo.png',
       },
       {
         name: 'React js',
         level: '',
         logoUrl:
-          'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg',
+          '/src/assets/images/techs/React_logo.svg',
       },
       {
         name: 'Tailwind css',
         level: '',
         logoUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png',
+          '/src/assets/images/techs/Tailwind_CSS_logo.png',
       },
       {
         name: 'Github',
         level: '',
         logoUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
+          '/src/assets/images/techs/Github_logo.svg',
       },
       {
         name: 'Vue js',
         level: '',
         logoUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png',
+          '/src/assets/images/techs/Vue_logo.png',
       },
       {
         name: 'Flutter',
         level: '',
         logoUrl:
-          'https://cdn.iconscout.com/icon/free/png-256/free-flutter-logo-icon-download-in-svg-png-gif-file-formats--programming-language-coding-development-logos-icons-1720090.png?f=webp',
+          '/src/assets/images/techs/Flutter_logo.webp',
       },
       {
         name: 'Node js',
         level: '',
         logoUrl:
-          'https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png',
+          '/src/assets/images/techs/Node_logo.png',
       },
       {
         name: 'Postgres',
         level: '',
         logoUrl:
-          'https://images.seeklogo.com/logo-png/27/2/postqresql-logo-png_seeklogo-273812.png',
+          '/src/assets/images/techs/Postqresql_logo.png',
       },
       {
         name: 'AWS',
         level: '',
         logoUrl:
-          'https://figmaresource.com/wp-content/uploads/2024/05/AWS-Marketplace-Logo-PNG-to-svg-1.svg',
+          '/src/assets/images/techs/AWS_logo.svg',
       },
       {
         name: 'Canva',
         level: '',
         logoUrl:
-          'https://oregoncoast.edu/wp-content/uploads/2024/02/canva-logo.png',
+          '/src/assets/images/techs/canva_logo.png',
       },
     // More technologies...
   ]

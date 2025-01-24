@@ -1,7 +1,7 @@
 const timeline = [
     {
       company: 'Faram Ingenieros SAS',
-      labor: 'CAD draftsman',
+      labor: 'CAD Draftsman',
       logo: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/autocad-icon.png',
       description:
         'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
@@ -28,7 +28,7 @@ const timeline = [
     },
     {
       company: 'SessionForward',
-      labor: 'Software developer',
+      labor: 'Software Developer',
       logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQECn3e1O48SUw/company-logo_100_100/company-logo_100_100/0/1630622917558/sessionforward_logo?e=1745452800&v=beta&t=ZUxgGFAech7n240l77540Lq7WecApHNrFkNChrjWsrg',
       description:
         'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',

@@ -3,7 +3,7 @@ const projects = [
       name: 'Interkey',
       role: 'Frontend developer',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        '/src/assets/images/projects/Interkey_hero.jpeg',
       description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
       url: 'https://interkey2023.netlify.app/',
       github: '#'    
@@ -12,16 +12,16 @@ const projects = [
         name: 'Siin shop',
         role: 'Frontend developer',
         imageUrl:
-          'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          '/src/assets/images/projects/Siin_hero.jpeg',
         description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
         url: 'https://gorgeous-cucurucho-749274.netlify.app/',
       github: '#'
       },
       {
-        name: 'Tahsin ALwajiha',
+        name: 'Tahsin Alwajiha',
         role: 'Frontend developer',
         imageUrl:
-          'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          '/src/assets/images/projects/Tahsin_hero.jpeg',
         description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
         url: 'https://tahsinalwajiha.com/',
         github: '#'
@@ -30,7 +30,7 @@ const projects = [
         name: 'CoffeeStrap',
         role: 'Mobile developer',
         imageUrl:
-          '/src/assets/images/projects/WhatsApp Image 2025-01-22 at 9.18.53 PM.jpeg',
+          '//src/assets/images/projects/ABtest_hero.jpeg',
         description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
         url: 'https://www.sessionforward.com/',
         github: '#'

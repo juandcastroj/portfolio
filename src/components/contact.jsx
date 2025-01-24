@@ -47,7 +47,7 @@ export default function Contact() {
 
 
       const ShowError = () => (
-        <div className="mx-6 text-red-600 my-2">Todos los campos obligatorios</div>
+        <div className="mx-6 text-red-600 my-2">All fields are mandatory</div>
       );
 
 
