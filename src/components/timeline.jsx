@@ -2,7 +2,7 @@ const timeline = [
     {
       company: 'Faram Ingenieros SAS',
       labor: 'CAD Draftsman',
-      logo: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/autocad-icon.png',
+      logo: '',
       description:
         'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
       date: 'Sept 2019',
