@@ -1,77 +1,78 @@
+import HTMLLogo from '../assets/images/techs/HTML5_logo.png';
+import CSSLogo from '../assets/images/techs/CSS_logo.png';
+import JavascriptLogo from '../assets/images/techs/Javascript_logo.png';
+import ReactLogo from '../assets/images/techs/React_logo.svg';
+import TailwindLogo from '../assets/images/techs/Tailwind_CSS_logo.png';
+import GithubLogo from '../assets/images/techs/Github_logo.svg';
+import VueLogo from '../assets/images/techs/Vue_logo.png';
+import FlutterLogo from '../assets/images/techs/Flutter_logo.webp';
+import NodejsLogo from '../assets/images/techs/Node_logo.png'
+import PostgresLogo from '../assets/images/techs/Postgresql_logo.png';
+import AWSLogo from '../assets/images/techs/AWS_logo.svg';
+import CanvaLogo from '../assets/images/techs/Canva_logo.png';
+
+
 const technologies = [
     {
       name: 'HTML',
       level: '',
-      logoUrl:
-        '/src/assets/images/techs/HTML5_logo.png',
+      logoUrl: HTMLLogo,
     },
     {
         name: 'CSS',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/CSS_logo.png',
+        logoUrl: CSSLogo,
       },
       {
         name: 'Javascript',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/JavaScript_logo.png',
+        logoUrl: JavascriptLogo,
       },
       {
         name: 'React js',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/React_logo.svg',
+        logoUrl: ReactLogo,
       },
       {
         name: 'Tailwind css',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/Tailwind_CSS_logo.png',
+        logoUrl: TailwindLogo,
       },
       {
         name: 'Github',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/Github_logo.svg',
+        logoUrl: GithubLogo,
       },
       {
         name: 'Vue js',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/Vue_logo.png',
+        logoUrl: VueLogo,
       },
       {
         name: 'Flutter',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/Flutter_logo.webp',
+        logoUrl: FlutterLogo,
       },
       {
         name: 'Node js',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/Node_logo.png',
+        logoUrl: NodejsLogo,
       },
       {
         name: 'Postgres',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/Postqresql_logo.png',
+        logoUrl: PostgresLogo,
       },
       {
         name: 'AWS',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/AWS_logo.svg',
+        logoUrl: AWSLogo,
       },
       {
         name: 'Canva',
         level: '',
-        logoUrl:
-          '/src/assets/images/techs/canva_logo.png',
+        logoUrl: CanvaLogo,
       },
-    // More technologies...
   ]
   
   export default function Stack() {

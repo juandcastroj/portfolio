@@ -1,12 +1,14 @@
-
-
+import AutocadLogo from '../assets/images/timeline/AutoCAD_logo.jpeg';
+import BitheaderLogo from '../assets/images/timeline/Bitheader_logo.jpeg';
+import AcademiaGeekLogo from '../assets/images/timeline/AcademiaGeek_logo.jpeg';
+import SessionForwardLogo from '../assets/images/timeline/SessionForward_logo.jpeg';
 
 
 const timeline = [
     {
       company: 'Faram Ingenieros SAS',
       labor: 'CAD Draftsman',
-      logo: '',
+      logo: AutocadLogo,
       description:
         'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
       date: 'Sept 2019',
@@ -15,7 +17,7 @@ const timeline = [
     {
       company: 'Bitheader',
       labor: 'Web Developer Jr',
-      logo: 'https://media.licdn.com/dms/image/v2/C560BAQFfMRXDWMDYBw/company-logo_200_200/company-logo_200_200/0/1630657267883?e=1745452800&v=beta&t=G0rVhhW9Jo2Do1OIfDJGZBGXuwUr045GR3bcQh484r0',
+      logo: BitheaderLogo,
       description:
         'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
       date: 'Mar 2021',
@@ -24,7 +26,7 @@ const timeline = [
     {
       company: 'Academia Geek',
       labor: 'Frontend Dev Trainee',
-      logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQEpITHet9W9YA/company-logo_100_100/company-logo_100_100/0/1630617533471?e=1745452800&v=beta&t=hHnYGBtkNPflWSDg-c1quCXZcykU_DDHS3AFV_y0qCY',
+      logo: AcademiaGeekLogo,
       description:
         'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
       date: 'Dec 2021',
@@ -33,7 +35,7 @@ const timeline = [
     {
       company: 'SessionForward',
       labor: 'Software Developer',
-      logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQECn3e1O48SUw/company-logo_100_100/company-logo_100_100/0/1630622917558/sessionforward_logo?e=1745452800&v=beta&t=ZUxgGFAech7n240l77540Lq7WecApHNrFkNChrjWsrg',
+      logo: SessionForwardLogo,
       description:
         'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
       date: 'Jun 2022',
