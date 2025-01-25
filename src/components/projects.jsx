@@ -59,7 +59,7 @@ const projects = [
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
             {projects.map((project, index) => (
               <li key={index} className="flex flex-col gap-10 pt-12 sm:flex-row">
-                <iframe src={project.url} className="aspect-square w-[40rem] h-60 flex-none rounded-2xl object-cover"></iframe>
+                <iframe src={project.url} className="aspect-square w-80 md:w-96 xl:w-[40rem] h-60 flex-none rounded-2xl object-cover"></iframe>
 
                 {/* <img alt={project.name} src="/src/assets/images/projects/image.png" className="aspect-auto w-52 flex-none rounded-2xl object-cover" /> */}
                 <div className="max-w-xl flex-auto">
