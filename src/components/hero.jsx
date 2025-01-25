@@ -1,4 +1,4 @@
-import JDphoto from '@/assets/images/hero/jd_photo.jpeg';
+import JDphoto from '/assets/images/hero/jd_photo.jpeg';
 
 
 export default function Hero() {
