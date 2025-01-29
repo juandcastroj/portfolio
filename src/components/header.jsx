@@ -33,8 +33,6 @@ export default function Header() {
                     </a>
                 </div> */}
 
-
-
                 <div className="flex lg:hidden fixed top-6 right-6">
                     <button
                         type="button"
