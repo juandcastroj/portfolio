@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+import tailwindcssAnimated from 'tailwindcss-animated';
+
+
 export default {
   content: [
     "./index.html",
@@ -8,6 +12,8 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    tailwindcssAnimated
+  ],
 }
 

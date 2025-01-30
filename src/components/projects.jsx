@@ -41,13 +41,12 @@ const projects = [
 
   export default function Projects() {
 
-    
     return (
 
       <div id="projects" className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl gap-20 px-6 lg:px-8">
 
-          <div className="max-w-2xl xl:col-span-2 mb-12">
+          <div className="max-w-2xl xl:col-span-2 mb-12 animate-fade-right">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
               Main projects
             </h2>
@@ -62,7 +61,7 @@ const projects = [
                 <iframe src={project.url} className="aspect-square w-80 md:w-96 xl:w-[40rem] h-60 flex-none rounded-2xl object-cover"></iframe>
 
                 {/* <img alt={project.name} src="/src/assets/images/projects/image.png" className="aspect-auto w-52 flex-none rounded-2xl object-cover" /> */}
-                <div className="max-w-xl flex-auto">
+                <div className="max-w-xl flex-auto animate-fade-left">
                   <a href={project.url}>  
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">{project.name}</h3>
                  
