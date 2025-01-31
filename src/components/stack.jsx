@@ -79,7 +79,7 @@ const technologies = [
 
     return (
 
-      <div id="stack" className="py-16 sm:py-20">
+      <div className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">My stack</h2>

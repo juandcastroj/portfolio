@@ -42,8 +42,7 @@ const projects = [
   export default function Projects() {
 
     return (
-
-      <div id="projects" className="py-20 md:py-28">
+      <div className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl gap-20 px-6 lg:px-8">
 
           <div className="max-w-2xl xl:col-span-2 mb-12 animate-fade-right">

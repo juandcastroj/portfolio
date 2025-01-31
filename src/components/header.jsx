@@ -5,7 +5,6 @@ import ThemeSwitcher from './themeSwitcher'
 import { Link } from 'react-router-dom'
 
 
-
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Projects', href: '#projects' },
@@ -14,13 +13,12 @@ const navigation = [
   ]
 
 
-
 export default function Header() {
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return ( 
-        <header className="absolute inset-x-0 top-0 z-50">
+        <header className="fixed inset-x-0 top-0 z-50">
 
                 {/* Desktop navbar */}
             <nav aria-label="Global" className="animate-fade-down animate-duration-[3000ms] animate-delay-200 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8">

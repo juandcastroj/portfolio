@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header'
 import Footer from './components/footer'
-
 import Home from './pages/home';
 import ContactUs from './pages/contact_us';
+import Todo from './pages/todo';
 
 
 export default function App() {
@@ -18,6 +18,7 @@ export default function App() {
               <Routes>
                 <Route path='/' element={<Home/>}></Route>
                 <Route path='/contact' element={<ContactUs/>}></Route>
+                <Route path='/todo' element={<Todo/>}></Route>
               </Routes>
 
           </main>

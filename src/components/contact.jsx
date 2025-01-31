@@ -50,16 +50,15 @@ export default function Contact() {
         <div className="mx-6 text-red-600 my-2">All fields are mandatory</div>
       );
 
-
     return (
 
-    <div id='contact' className="relative isolate">
+    <div className="relative isolate">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
 
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
 
-            <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
+            <h2 className="animate-flip-down animate-duration-1000 animate-delay-200 text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
               Get in touch
             </h2>
 
