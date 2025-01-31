@@ -2,14 +2,17 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import ThemeSwitcher from './themeSwitcher'
+import { Link } from 'react-router-dom'
+
 
 
 const navigation = [
-    { name: 'Experience', href: '#timeline' },
+    { name: 'Home', href: '/' },
     { name: 'Projects', href: '#projects' },
     { name: 'Stack', href: '#stack' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: '/contact' },
   ]
+
 
 
 export default function Header() {
@@ -20,7 +23,7 @@ export default function Header() {
         <header className="absolute inset-x-0 top-0 z-50">
 
                 {/* Desktop navbar */}
-            <nav aria-label="Global" className="animate-fade-down mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8">
+            <nav aria-label="Global" className="animate-fade-down animate-duration-[3000ms] animate-delay-200 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8">
 
                 {/* <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
@@ -46,9 +49,9 @@ export default function Header() {
 
                 <div className="hidden lg:flex lg:gap-x-12 bg-amber-100 dark:bg-blue-200 bg-opacity-80 rounded-2xl px-6 py-2 fixed top-8">
                 {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-green-900 dark:text-gray-600">
+                    <Link key={item.name} to={item.href} className="text-sm/6 font-semibold text-green-900 dark:text-gray-600">
                     {item.name}
-                    </a>
+                    </Link>
                 ))}
                 </div>
                

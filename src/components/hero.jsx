@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="mx-auto max-w-6xl px-6 py-10 sm:py-28 lg:py-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex gap-16 lg:max-w-none">
 
-            <div className="flex flex-col justify-between animate-fade-right">
+            <div className="flex flex-col justify-between animate-fade-right animate-duration-[3000ms] animate-delay-200">
 
               <h1 className="max-w-2xl text-balance text-3xl sm:text-5xl font-semibold tracking-tight text-green-900 dark:text-blue-300 lg:text-7xl lg:col-span-2 xl:col-auto">
                 Hi. I&#39;m Juan David Castro,
@@ -29,7 +29,7 @@ export default function Hero() {
               </div>
             </div>
 
-           <div className="animate-fade-left">
+           <div className="animate-fade-left animate-duration-[3000ms] animate-delay-200">
               <img
                   alt="JD photo"
                   src={JDphoto}

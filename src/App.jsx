@@ -1,26 +1,29 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header'
-import Hero from './components/hero'
-import Timeline from './components/timeline'
 import Footer from './components/footer'
-import Projects from './components/projects'
-import Stack from './components/stack'
-import Contact from './components/contact'
+
+import Home from './pages/home';
+import ContactUs from './pages/contact_us';
+
 
 export default function App() {
 
   return (
-    <div className="bg-white dark:bg-[#2b0076]">
-      <Header/>
-      
-        <main className="isolate">
-          <Hero/>
-          <Timeline/>
-          <Projects/>
-          <Stack/>
-          <Contact/>
-        </main>
+    <BrowserRouter>
 
-      <Footer/>
-    </div>
+      <Header/>
+        <div className="bg-white dark:bg-[#2b0076]">
+            <main className="isolate">
+
+              <Routes>
+                <Route path='/' element={<Home/>}></Route>
+                <Route path='/contact' element={<ContactUs/>}></Route>
+              </Routes>
+
+          </main>
+          <Footer/>
+        </div>
+    
+    </BrowserRouter>
   )
 }
