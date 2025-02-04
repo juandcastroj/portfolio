@@ -1,41 +1,43 @@
+import InterkeyHero from '../assets/images/projects/Interkey_hero.jpeg';
+import SiinHero from '../assets/images/projects/Siin_hero.jpeg';
+import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
+import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap_hero.jpeg';
+
+
+
 const projects = [
     {
       name: 'Interkey',
       role: 'Frontend developer',
-      imageUrl:
-        '/src/assets/images/projects/Interkey_hero.jpeg',
+      imageUrl: InterkeyHero,
       description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
       url: 'https://interkey2023.netlify.app/',
       github: '#'    
     },
     {
-        name: 'Siin shop',
-        role: 'Frontend developer',
-        imageUrl:
-          '/src/assets/images/projects/Siin_hero.jpeg',
-        description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        url: 'https://gorgeous-cucurucho-749274.netlify.app/',
+      name: 'Siin shop',
+      role: 'Frontend developer',
+      imageUrl: SiinHero,
+      description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      url: 'https://gorgeous-cucurucho-749274.netlify.app/',
       github: '#'
-      },
-      {
-        name: 'Tahsin Alwajiha',
-        role: 'Frontend developer',
-        imageUrl:
-          '/src/assets/images/projects/Tahsin_hero.jpeg',
-        description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        url: 'https://tahsinalwajiha.com/',
-        github: '#'
-      },
-      {
-        name: 'CoffeeStrap',
-        role: 'Mobile developer',
-        imageUrl:
-          '//src/assets/images/projects/ABtest_hero.jpeg',
-        description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-        url: 'https://www.sessionforward.com/',
-        github: '#'
-      },
-
+    },
+    {
+      name: 'Tahsin Alwajiha',
+      role: 'Frontend developer',
+      imageUrl: TahsinHero,
+      description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      url: 'https://tahsinalwajiha.com/',
+      github: '#'
+    },
+    {
+      name: 'CoffeeStrap',
+      role: 'Mobile developer',
+      imageUrl: CoffeeStrapHero,
+      description: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      url: 'https://www.sessionforward.com/',
+      github: '#'
+    },
   ]
   
 
@@ -55,13 +57,16 @@ const projects = [
           </div>
 
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
+
             {projects.map((project, index) => (
               <li key={index} className="flex flex-col gap-10 pt-12 sm:flex-row">
-                <iframe src={project.url} className="aspect-square w-80 md:w-96 xl:w-[40rem] h-60 flex-none rounded-2xl object-cover"></iframe>
 
-                {/* <img alt={project.name} src="/src/assets/images/projects/image.png" className="aspect-auto w-52 flex-none rounded-2xl object-cover" /> */}
+
+                {/* <iframe src={project.url} className="aspect-square w-80 md:w-96 xl:w-[40rem] h-60 flex-none rounded-2xl object-cover"></iframe> */}
+                <img alt={project.name} src={project.imageUrl} className="aspect-square w-80 md:w-96 xl:w-[35rem] h-72 flex-none rounded-2xl" />
+
                 <div className="max-w-xl flex-auto animate-fade-left">
-                  <a href={project.url}>  
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">  
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">{project.name}</h3>
                  
                     <p className="text-base/7 font-semibold text-gray-600 dark:text-gray-200">{project.role}</p>
