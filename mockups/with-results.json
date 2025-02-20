@@ -1,0 +1,82 @@
+[
+    {
+    "id": 6,
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2021,
+    "color": "White",
+    "mileage": 12000,
+    "price": 40000,
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "engine": "2.0L 4-cylinder",
+    "horsepower": 255,
+    "features": [
+    "Sunroof",
+    "Adaptive Cruise Control",
+    "Parking Assistance"
+    ],
+    "owners": 1,
+    "image": "https://fakeimg.pl/500x500/ffffff"
+    },
+    {
+    "id": 7,
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2022,
+    "color": "Red",
+    "mileage": 8000,
+    "price": 45000,
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "engine": "Electric Motor",
+    "horsepower": 322,
+    "features": [
+    "Autopilot",
+    "Full Self-Driving Capability",
+    "Premium Audio System"
+    ],
+    "owners": 1,
+    "image": "https://fakeimg.pl/500x500/ff0000"
+    },
+    {
+    "id": 12,
+    "make": "Lexus",
+    "model": "RX 350",
+    "year": 2022,
+    "color": "White",
+    "mileage": 8000,
+    "price": 48000,
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "engine": "3.5L V6",
+    "horsepower": 295,
+    "features": [
+    "Premium Leather Seats",
+    "Panoramic Sunroof",
+    "Mark Levinson Audio"
+    ],
+    "owners": 1,
+    "image": "https://fakeimg.pl/500x500/ffffff"
+    },
+    {
+    "id": 20,
+    "make": "Mercedes-Benz",
+    "model": "GLE 350",
+    "year": 2020,
+    "color": "Silver",
+    "mileage": 18000,
+    "price": 46000,
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "engine": "2.0L 4-cylinder",
+    "horsepower": 255,
+    "features": [
+    "MBUX Infotainment",
+    "Panoramic Sunroof",
+    "Adaptive Cruise Control"
+    ],
+    "owners": 2,
+    "image": "https://fakeimg.pl/500x500/cccccc"
+    }
+    ]
