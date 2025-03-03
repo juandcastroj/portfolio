@@ -1,4 +1,10 @@
+import responseMovies from '../assets/mocks/with-results.json'
+import noResults from '../assets/mocks/no-results.json'
+
 export function SearchMovie(params) {
+
+    const movies = responseMovies.Search
+    const hasMovies  = movies?.length > 0
 
     return(
         <>
@@ -12,6 +18,25 @@ export function SearchMovie(params) {
             </header>
             <main>
                 <h1 className="text-center text-white text-4xl">movies will be shown here</h1>
+
+            {
+                hasMovies ? (
+                    <ul className="flex flex-wrap justify-center">
+                        {responseMovies.Search.map((movie, index) => (
+                            <li key={movie.imdbID} className="m-4">
+                                <img src={movie.Poster} alt={movie.Title} />
+                                <h2 className='text-gray-200 text-2xl font-medium'>{movie.Title}</h2>
+                                <p className='text-gray-200 text-2xl font-medium'>{movie.Year}</p>
+                            </li>
+                        ))} 
+                    </ul>
+                )    :  
+                <h1 className="text-center text-white text-4xl">No movies found</h1>
+            }
+
+
+                <relative-time lang="es"  datetime="2025-09-01T00:00:00Z">
+                </relative-time>
             </main>
         </>
     )
