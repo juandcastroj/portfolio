@@ -1,41 +1,33 @@
 import { useRef, useState, useEffect } from 'react'
 import { useMovies } from '../hooks/useMovies'
+import { useSearch } from '../hooks/useSearch'
 import Movies from './movies/movies'
 
 export function SearchMovie() {
+    const { search, updateSearch, error } = useSearch()
+    const { movies , getMovies } = useMovies({search})
 
-    const { movies } = useMovies()
     const inputRef = useRef(null)
 
-    //uncontrolled form way  (need teh ref param on input)
-    const handleSubmit = event => {
-        event.preventDefault()
+    //uncontrolled form way  (need the ref param on input)
+    const handleSubmit = e => {
+        e.preventDefault()
         //const value = inputRef.current.value
-        const fields = new window.FormData(event.target)
-        console.log(fields.get('query'))
+        // const fields = new window.FormData(e.target)
+        // console.log(fields.get('search'))
+        //console.log({search});
+        
+        getMovies()
     }
+
 
     //controlled way
-    const [query, setQuery] = useState('')
-    const [error, setError] = useState(null)
-
     const handleChange = event => {
-        const newQuery = event.target.value // this way we can be sure about the state is the actual value  (cause is react state are async)
-        if (newQuery.startsWith(' ')) return //prevent setting the state with a space
-        setQuery(newQuery)
-        console.log(query);
+        const newsearch = event.target.value // this way we can be sure about the state is the actual value (cause in react state are async)
+        if (newsearch.startsWith(' ')) return //this return prevent setting the state when start with a space
+        updateSearch(newsearch)
+        //console.log(search);
     }
-
-
-    //validate a controlled form 
-    useEffect(() => {
-      if (query === '') {
-        setError('Please enter a movie name')
-       return
-      }
-      setError(null)
-    }, [query])
-    
 
     return(
         <>
@@ -43,7 +35,7 @@ export function SearchMovie() {
                 <h1 className="text-green-600 dark:text-gray-200 font-bold text-3xl mb-2">Movie searcher</h1>
 
                 <form className="p-20 text-center" onSubmit={handleSubmit}>
-                    <input value={query} onChange={handleChange} type="text" name='query' ref={inputRef} className="mx-4 p-2 rounded-md" placeholder="insert movie" />
+                    <input value={search} onChange={handleChange} type="text" name='search' ref={inputRef} className="mx-4 p-2 rounded-md" placeholder="insert movie" />
                     <button type="submit" className="text-gray-200 dark:text-gray-700 p-2 bg-blue-700 dark:bg-gray-200 rounded-md">Search</button>
                     {error && <p className="text-red-500 mt-4">{error}</p>}
                 </form>
@@ -51,7 +43,7 @@ export function SearchMovie() {
             </header>
 
             <main>
-                <h1 className="text-center text-white text-4xl">movies will be shown here</h1>
+                {/* <h1 className="text-center text-white text-4xl">movies will be shown here</h1> */}
                 <Movies movies={movies} />
             </main>
         </>
