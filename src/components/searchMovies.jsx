@@ -17,7 +17,7 @@ export function SearchMovie() {
 
     //controlled way
     const handleChange = event => {
-        const newsearch = event.target.value // this way we can be sure about the state is the actual value (cause in react state are async)
+        const newsearch = event.target.value // this way we can be sure about the state is the actual value (cause states are async on React)
         if (newsearch.startsWith(' ')) return //this return prevent setting the state when start with a space
         updateSearch(newsearch)
         //console.log(search);
