@@ -20,6 +20,7 @@ function NoMovies(params) {
 }
 
 
+
 export default function Movies({movies}) {
     const hasMovies  = movies?.length > 0
 

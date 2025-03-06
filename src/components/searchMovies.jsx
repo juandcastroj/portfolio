@@ -5,21 +5,15 @@ import Movies from './movies/movies'
 
 export function SearchMovie() {
     const { search, updateSearch, error } = useSearch()
-    const { movies , getMovies } = useMovies({search})
+    const { movies, getMovies, loading } = useMovies({search})
 
     const inputRef = useRef(null)
 
     //uncontrolled form way  (need the ref param on input)
     const handleSubmit = e => {
         e.preventDefault()
-        //const value = inputRef.current.value
-        // const fields = new window.FormData(e.target)
-        // console.log(fields.get('search'))
-        //console.log({search});
-        
         getMovies()
     }
-
 
     //controlled way
     const handleChange = event => {
@@ -43,8 +37,12 @@ export function SearchMovie() {
             </header>
 
             <main>
-                {/* <h1 className="text-center text-white text-4xl">movies will be shown here</h1> */}
-                <Movies movies={movies} />
+                {
+                    loading ? 
+                    <h1 className="text-center text-white text-4xl">Loading...</h1> 
+                    :
+                    <Movies movies={movies} />
+                }
             </main>
         </>
     )
