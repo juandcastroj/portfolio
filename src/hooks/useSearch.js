@@ -11,15 +11,19 @@ export function useSearch() {
         if (isFirstInput.current) {
             isFirstInput.current = search === ''
             return
+        } 
+        if (search.startsWith(' ')) {
+            setError('The search cannot start with a space')
+            return
         }
-      if (search === '') {
-        setError('Please enter a movie name')
-       return
-      }
-      if (search.length < 3) {
-        setError('Need more than 3 characters to search movie')
-       return
-      }
+        if (search === '') {
+            setError('Please enter a movie name')
+            return
+        }
+        if (search.length < 3) {
+            setError('Need more than 3 characters to search movie')
+            return
+        }
       setError(null)
     }, [search])
     

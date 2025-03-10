@@ -1,7 +1,7 @@
-import { SearchMovie } from "../components/searchMovies";
+import { AppMovies } from "../components/appMovies";
 
 export default function Search() {
     return(
-        <SearchMovie />
+        <AppMovies />
     )
 }
