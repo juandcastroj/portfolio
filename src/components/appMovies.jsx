@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
 import { useMovies } from '../hooks/useMovies'
 import { useSearch } from '../hooks/useSearch'
 import Movies from './movies/movies'
@@ -11,17 +11,32 @@ export function AppMovies() {
 
     const handleSubmit = e => {
         e.preventDefault()
-        getMovies()
+
+        //now we pass search as a parameter to avoid all the innecesary calls with useCallback
+        getMovies({search})
     }
 
     const handleSort = () => {                        
        setSort(!sort) //this is the way to activate o r deactivate the sort
     }
 
+    // const handleChange = event => {
+    //     const newsearch = event.target.value // this way to be sure about the state has the current value (cause states are asyncs on React)
+    //     updateSearch(newsearch)
+    // }
+
+    //to search while write the movie
     const handleChange = event => {
         const newsearch = event.target.value // this way to be sure about the state has the current value (cause states are asyncs on React)
         updateSearch(newsearch)
+        getMovies({search: newsearch})
     }
+
+    useEffect(() => {
+     console.log("searchhh getmovies");
+     
+    }, [getMovies])
+    
 
     return(
         <>
