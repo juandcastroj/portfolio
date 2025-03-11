@@ -5,6 +5,7 @@ import Home from './pages/home';
 import ContactUs from './pages/contact_us';
 import Todo from './pages/todo';
 import Search from './pages/search';
+import Tiktaktoe from './pages/tiktaktoe';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
                 <Route path='/contact' element={<ContactUs/>}></Route>
                 <Route path='/todo' element={<Todo/>}></Route>
                 <Route path='/search' element={<Search/>}></Route>
+                <Route path='/game' element={<Tiktaktoe/>}></Route>
                 <Route path='*' element={<Home/>}></Route>
               </Routes>
 
