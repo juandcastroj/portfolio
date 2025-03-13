@@ -1,6 +1,6 @@
 import Contact from "../components/contact";
 
-export default function ContactUs() {
+export default function ContactUsRoute() {
     return (
         <>
             <Contact/>

@@ -33,8 +33,7 @@ export function AppMovies() {
     }
 
     useEffect(() => {
-     console.log("searchhh getmovies");
-     
+     console.log("getmovies recibed");
     }, [getMovies])
     
 

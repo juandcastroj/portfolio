@@ -5,7 +5,7 @@ import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap_hero.jpeg';
 
 
 
-const projects = [
+const projectsData = [
     {
       name: 'Interkey',
       role: 'Frontend developer',
@@ -58,12 +58,12 @@ const projects = [
 
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
 
-            {projects.map((project, index) => (
+            {projectsData.map((project, index) => (
               <li key={index} className="flex flex-col gap-10 pt-12 sm:flex-row">
 
 
-                {/* <iframe src={project.url} className="aspect-square w-80 md:w-96 xl:w-[40rem] h-60 flex-none rounded-2xl object-cover"></iframe> */}
-                <img alt={project.name} src={project.imageUrl} className="aspect-square w-80 md:w-96 xl:w-[35rem] h-72 flex-none rounded-2xl" />
+                {/* <iframe src={project.url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-60 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
+                <img alt={project.name} src={project.imageUrl} className="aspect-square w-[24rem] md:w-96 xl:w-[35rem] h-72 flex-none rounded-none md:rounded-2xl" />
 
                 <div className="max-w-xl flex-auto animate-fade-left">
                   <a href={project.url} target="_blank" rel="noopener noreferrer">  

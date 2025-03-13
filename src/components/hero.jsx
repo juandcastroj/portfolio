@@ -1,4 +1,5 @@
 import JDphoto from '../assets/images/hero/jd_photo.jpeg';
+import JDavatar from '../assets/images/hero/avatar_jd.png';
 
 
 export default function Hero() {
@@ -32,7 +33,7 @@ export default function Hero() {
            <div className="animate-fade-left animate-duration-[3000ms] animate-delay-200">
               <img
                   alt="JD photo"
-                  src={JDphoto}
+                  src={JDavatar}
                   className="mt-10 aspect-square w-full max-w-lg rounded-full object-cover sm:mt-8 lg:mt-0 lg:max-w-72 text-center"
                 />
            </div>

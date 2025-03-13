@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from './contexts/ThemeContext.jsx'
-import './assets/tailwind.css'
+import './assets/css/tailwind.css'
 import App from './App.jsx'
 
 
