@@ -21,7 +21,7 @@ export default function Header() {
 
     return ( 
         <header className="fixed inset-x-0 top-0 z-50">
-            <nav aria-label="Global" className="animate-fade-down animate-duration-[3000ms] animate-delay-200 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8">
+            <nav aria-label="Global" className="font-mono animate-fade-down animate-duration-[3000ms] animate-delay-200 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8">
                 <div className="flex lg:hidden fixed top-6 right-6">
                     <button
                         type="button"
@@ -34,11 +34,13 @@ export default function Header() {
                 </div>
 
                 <div className="hidden lg:flex lg:gap-x-12 bg-amber-100 dark:bg-blue-200 bg-opacity-80 rounded-2xl px-6 py-2 fixed top-8">
-                    {navigation.map((item) => (
+                    { 
+                     navigation.map((item) => (
                         <Link key={item.name} to={item.href} className="text-sm/6 font-semibold text-green-900 dark:text-gray-600">
                         {item.name}
                         </Link>
-                    ))}
+                        ))
+                    }
                 </div>
 
                 <ThemeSwitcher className="hidden lg:inline"/>

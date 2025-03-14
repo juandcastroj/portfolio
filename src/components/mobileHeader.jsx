@@ -4,6 +4,7 @@ import ThemeSwitcher from './themeSwitcher'
 
 export function MobileHeader( { navigation, mobileMenuOpen, setMobileMenuOpen, handleMobileMenu }) {
 
+    
     return (
         <>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -22,7 +23,7 @@ export function MobileHeader( { navigation, mobileMenuOpen, setMobileMenuOpen, h
 
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
+                            <div className="space-y-2 py-6 font-mono">
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}

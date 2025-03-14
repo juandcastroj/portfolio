@@ -29,7 +29,6 @@ const social = [
   ];
 
 
-
 export default function Footer () {
 
     return(
@@ -46,7 +45,7 @@ export default function Footer () {
               ))}
             </div>
 
-            <p className="mt-8 text-sm/6 text-gray-600 dark:text-gray-200 md:order-1 md:mt-0">
+            <p className="mt-8 text-sm/6 font-mono text-gray-600 dark:text-gray-200 md:order-1 md:mt-0">
               &copy; 2025 JD Castro.
             </p>
           </div>
