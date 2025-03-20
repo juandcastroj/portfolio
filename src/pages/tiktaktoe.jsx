@@ -1,4 +1,4 @@
-import Game from "../components/tiktaktoe";
+import Game from "../components/tiktaktoe/tiktaktoe";
 
 export default function Tiktaktoe() {
     
