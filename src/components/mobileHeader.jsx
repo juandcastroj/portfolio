@@ -21,14 +21,14 @@ export function MobileHeader( { navigation, mobileMenuOpen, setMobileMenuOpen, h
                         </button>
                     </div>
 
-                    <div className="mt-6 flow-root">
+                    <div className="mt-28">
                         <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6 font-mono">
+                            <div className="py-24 font-mono flex flex-col text-center space-y-6">
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-blue-200 hover:bg-gray-50"
+                                        className="block rounded-lg px-3 py-2 text-2xl font-semibold text-gray-900 dark:text-blue-200 hover:bg-gray-50"
                                     >
                                         {item.name}
                                     </a>

@@ -12,8 +12,8 @@ import { checkWinnerFrom, checkEndGame } from './logic/board.js'
 import { saveGameToStorage, resetGameStorage } from './logic/storage/index.js'
 
 
-
 function Game () {
+
   const [board, setBoard] = useState(() => {
     const boardFromStorage = window.localStorage.getItem('board')
     if (boardFromStorage) return JSON.parse(boardFromStorage)
@@ -66,6 +66,7 @@ function Game () {
     <main className='board'>
       <h1 translate="no">Tic tac toe</h1>
       <button onClick={resetGame}>Reset del juego</button>
+
       <section className='game'>
         {
           board.map((square, index) => {
