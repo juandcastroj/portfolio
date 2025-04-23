@@ -5,8 +5,9 @@ export default function Contact() {
 
   return (
     <div className="relative isolate">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
+
+        <div className="relative px-6 lg:static lg:px-8 py-16 lg:py-28">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg font-mono">
             <h2 className="animate-flip-down animate-duration-1000 animate-delay-200 text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
               Get in touch
@@ -52,7 +53,6 @@ export default function Contact() {
         </div>
 
         <Form/>
-        
       </div>
     </div>
   )

@@ -3,13 +3,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline'
 import ThemeSwitcher from './themeSwitcher'
 import { Link } from 'react-router-dom'
 import { MobileHeader } from './mobileHeader'
-
-const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Stack', href: '/stack' },
-    { name: 'Contact', href: '/contact' },
-  ]
+import { navBarItems } from '../constants/navbar'
 
 export default function Header() {
 
@@ -35,8 +29,9 @@ export default function Header() {
 
                 <div className="hidden lg:flex lg:gap-x-12 bg-amber-100 dark:bg-blue-200 bg-opacity-80 rounded-2xl px-6 py-2 fixed top-8">
                     { 
-                     navigation.map((item) => (
-                        <Link key={item.name} to={item.href} className="text-sm/6 font-semibold text-green-900 dark:text-gray-600">
+
+                     navBarItems.map((item) => (
+                        <Link key={item.name} to={item.href} className="text-base font-semibold text-green-900 dark:text-gray-600">
                         {item.name}
                         </Link>
                         ))
@@ -46,7 +41,7 @@ export default function Header() {
                 <ThemeSwitcher className="hidden lg:inline"/>
             </nav>
 
-            <MobileHeader navigation={navigation} handleMobileMenu={handleMobileMenu} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+            <MobileHeader navigationItems={navBarItems} handleMobileMenu={handleMobileMenu} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
         </header>
     );
 }

@@ -1,4 +1,4 @@
-import { projectsData } from "../services/projectsPortfolio";
+import { projectsData } from "../constants/projectsPortfolio";
 
 export default function Projects() {
   return (
@@ -24,15 +24,13 @@ export default function Projects() {
                 key={index}
                 className="flex flex-col gap-10 pt-12 sm:flex-row"
               >
-                {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-60 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
+              {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
 
-                <div>
-                  <img
-                    alt={company}
-                    src={imageUrl}
-                    className="aspect-auto w-[24rem] md:w-96 xl:w-[35rem] h-auto flex-none rounded-none md:rounded-2xl"
-                  />
-                </div>
+                <img
+                  alt={company}
+                  src={imageUrl}
+                  className="aspect-square w-96 xl:w-[36rem] h-80 flex-none rounded-none md:rounded-2xl"
+                />
 
                 <div className="max-w-xl flex-auto animate-fade-left">
                   <a href={url} target="_blank" rel="noopener noreferrer">

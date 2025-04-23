@@ -47,9 +47,10 @@ export function Form() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="px-6 pt-12 sm:pt-20 pb-12 sm:pb-32 lg:px-8 lg:py-48 font-mono"
+        className="px-6 lg:px-8 py-16 sm:py-20 lg:py-28 font-mono"
       >
-        <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+        
+        <div className="mx-auto max-w-xl lg:max-w-lg">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
@@ -129,7 +130,7 @@ export function Form() {
           </div>
 
           <div className="mt-8 flex justify-end">
-            {error && <ShowError />}
+            { error? <ShowError /> : null }
             <button
               type="submit"
               className="rounded-md bg-green-900 dark:bg-blue-200 px-3.5 py-2.5 text-center text-sm font-semibold text-white dark:text-gray-800 shadow-sm hover:bg-green-700 dark:hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

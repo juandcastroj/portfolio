@@ -1,7 +1,7 @@
 import InterkeyHero from '../assets/images/projects/Interkey_hero.jpeg';
 import SiinHero from '../assets/images/projects/Siin_hero.jpeg';
 import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
-import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.png';
+import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 
 
 export const projectsData = [
@@ -26,7 +26,7 @@ export const projectsData = [
       role: 'Frontend developer',
       imageUrl: TahsinHero,
       description: 'Design and develop the user interfaces for the main website for the company. The website is a landing page with a contact form and a blog section.',
-      url: 'https://tahsinalwajiha.com/',
+      url: null,
       repo: '#'
     },
     {
@@ -34,7 +34,7 @@ export const projectsData = [
       role: 'Mobile developer',
       imageUrl: CoffeeStrapHero,
       description: 'Design and develop the user interfaces for the main website for the company. The website is a landing page with a contact form and a blog section.',
-      url: 'https://www.sessionforward.com/',
+      url: null,
       repo: '#'
     },
 ]

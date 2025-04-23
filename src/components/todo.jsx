@@ -3,9 +3,7 @@ import { ChevronDownIcon } from '@heroicons/react/16/solid'
 
 export default function TodoSection() {
 
-
   return (
-
     
     <form className='bg-gray-200 mx-auto p-12 xl:p-20'>
       <div className="space-y-12">

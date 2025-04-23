@@ -1,4 +1,4 @@
-import { WINNER_COMBOS } from '../../../services/constantsTiktaktoe'
+import { WINNER_COMBOS } from '../../../constants/tiktaktoe'
 
 export const checkWinnerFrom = (boardToCheck) => {
   // revisamos todas las combinaciones ganadoras

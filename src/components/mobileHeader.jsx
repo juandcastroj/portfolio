@@ -3,7 +3,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "./themeSwitcher";
 
 export function MobileHeader({
-  navigation,
+  navigationItems,
   mobileMenuOpen,
   setMobileMenuOpen,
   handleMobileMenu,
@@ -31,7 +31,8 @@ export function MobileHeader({
           <div className="mt-28">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-24 font-mono flex flex-col text-center space-y-6">
-                {navigation.map((item) => (
+                {
+                  navigationItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}

@@ -6,7 +6,7 @@ import confetti from "canvas-confetti";
 import { Square } from "./square.jsx";
 import { WinnerModal } from "./winnerModal.jsx";
 
-import { TURNS } from "../../services/constantsTiktaktoe.js";
+import { TURNS } from "../../constants/tiktaktoe.js";
 
 import { checkWinnerFrom, checkEndGame } from "./logic/board.js";
 import { saveGameToStorage, resetGameStorage } from "./logic/storage/index.js";
