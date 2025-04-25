@@ -16,7 +16,7 @@ export default function App() {
     <BrowserRouter>
 
       <Header/>
-        <div className="bg-white dark:bg-[#2b0076]">
+        <div className="bg-amber-50 dark:bg-[#2b0076]">
             <main className="isolate">
 
               <Routes>

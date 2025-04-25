@@ -1,38 +1,42 @@
 import { projectsData } from "../constants/projectsPortfolio";
 
 export default function Projects() {
+
   return (
-    <div className="py-20 md:py-28">
-      <div className="mx-auto max-w-7xl gap-20 px-6 lg:px-8 font-mono">
-        <div className="max-w-2xl xl:col-span-2 mb-12 animate-fade-right">
-          <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
+    <div id="Projects" className="py-20 md:py-28">
+      <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-mono">
+
+        <div className="text-center xl:col-span-2 mb-12 animate-fade-right">
+          <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
             Main projects
           </h2>
           <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-            Below is a list view of my main and fully develop web and mobile
-            jobs throughout my career as software developer.
+            Below is a list view of my main fully works and collaborations for websites and include one mobile application developed throughout the last years as a software developer.
           </p>
         </div>
 
         <ul
           role="list"
-          className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3"
+          className="space-y-8 xl:col-span-3"
         >
+
           {projectsData.map(
             ({ company, role, imageUrl, description, url, repo }, index) => (
+
               <li
                 key={index}
-                className="flex flex-col gap-10 pt-12 sm:flex-row"
-              >
+                className="flex flex-col gap-10 sm:flex-row p-3 bg-white dark:bg-[#471f8d]
+                           rounded-3xl ring-1 ring-slate-100 dark:ring-[#471f8d] hover:shadow-md hover:bg-amber-50 dark:hover:bg-[#38107e]" >
+
               {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
+                
+                  <img
+                    alt={company}
+                    src={imageUrl}
+                    className="aspect-square w-96 xl:w-[36rem] h-80 flex-none rounded-none md:rounded-2xl"
+                  />
 
-                <img
-                  alt={company}
-                  src={imageUrl}
-                  className="aspect-square w-96 xl:w-[36rem] h-80 flex-none rounded-none md:rounded-2xl"
-                />
-
-                <div className="max-w-xl flex-auto animate-fade-left">
+                <div className="max-w-xl flex-auto animate-fade-left pt-6">
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">
                       {company}
@@ -47,9 +51,9 @@ export default function Projects() {
 
                   <a
                     href={repo}
-                    className="text-gray-600 hover:text-gray-500 dark:text-gray-200"
+                    className="text-green-900 hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
                   >
-                    <span className="sr-only">Repository</span>
+                        <span className="sr-only">Repository</span>
                     <svg
                       fill="currentColor"
                       viewBox="0 0 30 30"
@@ -63,11 +67,13 @@ export default function Projects() {
                       />
                     </svg>
                   </a>
+
                 </div>
               </li>
-            )
-          )}
+              ))
+            }
         </ul>
+
       </div>
     </div>
   );

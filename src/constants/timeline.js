@@ -1,4 +1,4 @@
-import AutocadLogo from '../assets/images/timeline/AutoCAD_logo.jpeg';
+import FaramLogo from '../assets/images/timeline/Draftsman_logo.jpeg';
 import BitheaderLogo from '../assets/images/timeline/Bitheader_logo.jpeg';
 import AcademiaGeekLogo from '../assets/images/timeline/AcademiaGeek_logo.jpeg';
 import SessionForwardLogo from '../assets/images/timeline/SessionForward_logo.jpeg';
@@ -8,7 +8,7 @@ export const timelineItems = [
     {
       company: 'Faram Ingenieros',
       labor: 'CAD Draftsman',
-      logo: AutocadLogo,
+      logo: FaramLogo,
       description:
         'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
       date: 'Sept 2019',
@@ -27,7 +27,7 @@ export const timelineItems = [
     },
     {
       company: 'Academia Geek',
-      labor: 'Frontend Dev Trainee',
+      labor: 'Frontend Trainee',
       logo: AcademiaGeekLogo,
       description:
         'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',

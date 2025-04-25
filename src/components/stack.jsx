@@ -3,8 +3,7 @@ import { stackItems } from "../constants/stack";
 export default function Stack() {
 
   return (
-
-    <div className="py-16 sm:py-20">
+    <div id="Stack" className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 font-mono">
           <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">My stack</h2>
@@ -18,10 +17,10 @@ export default function Stack() {
           className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6 animate-jump"
         >
           {
-            stackItems.map((tech) => (
-              <li key={tech.name}>
-                <img alt="" src={tech.logoUrl} className="mx-auto size-28 rounded-md" />
-                <h3 className="mt-6 text-base/7 font-mono font-semibold tracking-tight text-green-900 dark:text-blue-300">{tech.name}</h3>
+            stackItems.map(( {name, logoUrl}, index) => (
+              <li key={index}>
+                <img alt={name} src={logoUrl} className="mx-auto size-28 rounded-md" />
+                <h3 className="mt-6 text-base/7 font-mono font-semibold tracking-tight text-green-900 dark:text-blue-300">{name}</h3>
               </li>
             ))
           }
