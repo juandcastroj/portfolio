@@ -17,8 +17,6 @@ export default function Hero() {
                   Hi. I&#39;m Juan David Castro,
                   Software developer.
                 </h1>
-
-
                 <div className="my-2 sm:my-8 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                   <p className="text-base sm:text-lg md:text-xl lg:mt-6 font-medium leading-2 text-gray-500 dark:text-gray-200">
                     Best known as JD, specialized on frontend web developer, 
