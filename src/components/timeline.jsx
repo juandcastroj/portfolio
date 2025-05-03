@@ -5,8 +5,7 @@ export default function Timeline() {
     <div className="mx-auto my-12 max-w-7xl px-6 lg:px-8 py-8 lg:py-12">
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
         {timelineItems.map(
-          ({  animationDelay,
-              dateTime,
+          ({  dateTime,
               date,
               logo,
               company,
@@ -15,8 +14,6 @@ export default function Timeline() {
             }, index ) => (
 
             <div key={index}>
-
-              
               <time
                 dateTime={dateTime}
                 className="flex items-center text-base font-mono font-semibold text-green-900 dark:text-gray-200"

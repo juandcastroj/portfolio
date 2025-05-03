@@ -13,7 +13,6 @@ export const timelineItems = [
         'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
       date: 'Sept 2019',
       dateTime: '2019-09',
-      animationDelay: '5000'
     },
     {
       company: 'Bitheader',
@@ -23,7 +22,6 @@ export const timelineItems = [
         'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
       date: 'Mar 2021',
       dateTime: '2021-03',
-      animationDelay: '2000'
     },
     {
       company: 'Academia Geek',
@@ -33,7 +31,6 @@ export const timelineItems = [
         'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
       date: 'Dec 2021',
       dateTime: '2021-12',
-      animationDelay: '3000'
     },
     {
       company: 'SessionForward',
@@ -43,6 +40,5 @@ export const timelineItems = [
         'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
       date: 'Jun 2022',
       dateTime: '2022-05',
-      animationDelay: '4000'
     },
   ]
