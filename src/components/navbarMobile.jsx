@@ -2,7 +2,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "./themeSwitcher";
 
-export function MobileHeader({
+export function NavbarMobile({
   navigationItems,
   mobileMenuOpen,
   setMobileMenuOpen,
