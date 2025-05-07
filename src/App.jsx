@@ -30,7 +30,7 @@ export default function App() {
                 <Route path='*' element={<Home/>}></Route>
               </Routes>
 
-          </main>
+            </main>
           <Footer/>
         </div>
     

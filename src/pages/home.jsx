@@ -1,6 +1,4 @@
 import Hero from "../components/hero";
-import Projects from "../components/projects";
-import Stack from "../components/stack";
 import Timeline from "../components/timeline";
 
 export default function Home() {
@@ -8,8 +6,6 @@ export default function Home() {
         <>
             <Hero/>
             <Timeline/>
-            <Projects/>
-            <Stack/>
         </>
     )
 }

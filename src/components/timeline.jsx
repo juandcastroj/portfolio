@@ -3,8 +3,18 @@ import { timelineItems } from "../constants/timeline";
 export default function Timeline() {
   return (
     <div className="mx-auto my-12 max-w-7xl px-6 lg:px-8 py-8 lg:py-12">
+
+      <div className="mx-auto pb-12 lg:pb-20 max-w-2xl lg:mx-0 font-mono">
+        <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">Experience</h2>
+        <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
+          We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
+          best results for our clients.
+        </p>
+      </div>
+
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
-        {timelineItems.map(
+        {
+          timelineItems.map(
           ({  dateTime,
               date,
               logo,
@@ -31,7 +41,6 @@ export default function Timeline() {
                   className="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 dark:bg-gray-400 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                 />
               </time>
-            
 
               <div className="transition transform duration-300 hover:-translate-y-2">
                  

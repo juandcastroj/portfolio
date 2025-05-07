@@ -1,6 +1,7 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "./themeSwitcher";
+import { Link } from "react-router-dom";
 
 export function NavbarMobile({
   navigationItems,
@@ -32,14 +33,14 @@ export function NavbarMobile({
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-24 font-mono flex flex-col text-center space-y-6">
                 {
-                  navigationItems.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
+                  navigationItems.map(({name, to}, index) => (
+                  <Link
+                    key={name}
+                    to={to}
                     className="block rounded-lg px-3 py-2 text-2xl font-semibold text-gray-900 dark:text-blue-200 hover:bg-gray-50"
                   >
-                    {item.name}
-                  </a>
+                    {name}
+                  </Link>
                 ))}
               </div>
 

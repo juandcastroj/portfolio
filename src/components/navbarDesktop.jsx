@@ -49,8 +49,8 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                    <div className="hidden lg:flex lg:gap-x-12 bg-amber-100 dark:bg-blue-200 bg-opacity-80 rounded-2xl px-6 py-2 fixed top-8">
                        
                        { 
-                        navigationItems.map(( {name, href} , index) => (
-                           <Link key={index} to={'#' + name} className="text-base font-semibold text-green-900 dark:text-gray-600">
+                        navigationItems.map(( {name, to} , index) => (
+                           <Link key={index} to={to} className="text-base font-semibold text-green-900 dark:text-gray-600">
                                {name}
                            </Link>
                            ))
