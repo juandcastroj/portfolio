@@ -6,9 +6,10 @@ export const ThemeContext = createContext();
 // eslint-disable-next-line react/prop-types
 export const ThemeProvider = ({ children }) => {
 
+  
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme ? savedTheme : "light";
+    return savedTheme ? savedTheme : "dark";
   });
 
   useEffect(() => {

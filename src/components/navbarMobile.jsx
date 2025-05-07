@@ -44,7 +44,7 @@ export function NavbarMobile({
                 ))}
               </div>
 
-              <ThemeSwitcher className="inline lg:hidden" />
+              {/* <ThemeSwitcher className="inline lg:hidden" /> */}
             </div>
           </div>
         </DialogPanel>

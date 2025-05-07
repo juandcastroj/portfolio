@@ -57,7 +57,7 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                        }
                    </div>
    
-                   <ThemeSwitcher className="hidden lg:inline"/>
+                   {/* <ThemeSwitcher className="hidden lg:inline"/> */}
                </nav>
          ) : (<></>)
       } 

@@ -6,7 +6,7 @@ export default function Projects() {
     <div id="Projects" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-mono">
 
-        <div className="text-center xl:col-span-2 mb-12 animate-fade-right">
+        <div className="text-center xl:col-span-2 mb-12">
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
             Main projects
           </h2>
@@ -36,7 +36,7 @@ export default function Projects() {
                     className="aspect-square w-96 xl:w-[36rem] h-80 flex-none rounded-none md:rounded-2xl"
                   />
 
-                <div className="max-w-xl flex-auto animate-fade-left pt-6">
+                <div className="max-w-xl flex-auto pt-6">
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">
                       {company}

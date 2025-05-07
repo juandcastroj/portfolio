@@ -8,6 +8,7 @@ import Tiktaktoe from './pages/tiktaktoe';
 import ContactUsRoute from './pages/contact_us';
 import ProjectsRoute from './pages/projects';
 import StackRoute from './pages/stack';
+import './assets/css/bg.css'
 
 
 export default function App() {
@@ -15,8 +16,35 @@ export default function App() {
   return (
     <BrowserRouter>
 
-      <Header/>
-        <div className="bg-amber-50 dark:bg-[#2b0076]">
+        <div className="background">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <Header/>
             <main className="isolate">
 
               <Routes>
@@ -29,10 +57,11 @@ export default function App() {
                 <Route path='/game' element={<Tiktaktoe/>}></Route>
                 <Route path='*' element={<Home/>}></Route>
               </Routes>
+              <Footer/>
 
             </main>
-          <Footer/>
         </div>
+
     
     </BrowserRouter>
   )
