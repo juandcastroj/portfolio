@@ -25,7 +25,7 @@ export default function Projects() {
 
               <li
                 key={index}
-                className="flex flex-col gap-10 sm:flex-row p-3 bg-white dark:bg-[#471f8d]
+                className="flex flex-col gap-10 sm:flex-row p-3 bg-white dark:bg-transparent
                            rounded-3xl ring-1 ring-slate-100 dark:ring-[#471f8d] hover:shadow-md hover:bg-amber-50 dark:hover:bg-[#38107e]" >
 
               {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
