@@ -3,9 +3,8 @@ import { projectsData } from "../constants/projectsPortfolio";
 export default function Projects() {
 
   return (
-    <div id="Projects" className="py-20 md:py-28">
+    <div className="py-20 md:py-28 animate-fade-down animate-duration-[3000ms] animate-delay-700">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-mono">
-
         <div className="text-center xl:col-span-2 mb-12">
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
             Main projects
@@ -15,16 +14,13 @@ export default function Projects() {
           </p>
         </div>
 
-        <ul
-          role="list"
-          className="space-y-8 xl:col-span-3"
-        >
-          {projectsData.map(
+        <ul role="list"  className="space-y-8 xl:col-span-3" >
+          {  projectsData.map(
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-10 sm:flex-row p-3 bg-white dark:bg-transparent
-                           rounded-3xl ring-1 ring-slate-100 dark:ring-[#471f8d] hover:shadow-md hover:bg-amber-50 dark:hover:bg-white/10 dark:hover:backdrop-blur-md" >
+                className="flex flex-col gap-10 sm:flex-row p-3 bg-transparent
+                           rounded-3xl ring-1 ring-slate-300 dark:ring-[#471f8d] hover:shadow-md hover:bg-white/30 dark:hover:bg-white/10 hover:backdrop-blur-md" >
               {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
                   <img
                     alt={company}
@@ -48,7 +44,7 @@ export default function Projects() {
                     href={repo}
                     className="text-green-900 hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
                   >
-                        <span className="sr-only">Repository</span>
+                    <span className="sr-only">Repository</span>
                     <svg
                       fill="currentColor"
                       viewBox="0 0 30 30"
@@ -64,10 +60,9 @@ export default function Projects() {
                   </a>
                 </div>
               </li>
-              ))
-            }
+            ))
+          }
         </ul>
-
       </div>
     </div>
   );

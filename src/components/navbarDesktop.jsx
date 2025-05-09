@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "./themeSwitcher";
-
 import { useLocation } from "react-router-dom";
 
 export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
@@ -23,7 +22,8 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
     <>
       <nav
         aria-label="Global"
-        className={`font-mono animate-fade-down animate-duration-[1500ms] animate-delay-200 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8 ${
+        className={`font-mono animate-fade-down animate-duration-[1500ms] animate-delay-200 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8
+         ${
           hasBackground ? "" : "bg-transparent"
         }`}
       >
@@ -39,13 +39,13 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
         </div>
 
         <div
-          className={`hidden lg:flex lg:gap-x-12 fixed top-8 rounded-full px-6 py-2 items-center backdrop-blur-xl transition-colors duration-300 ${
+          className={`hidden lg:flex lg:gap-x-12 fixed top-8 rounded-full px-4 py-2 items-center backdrop-blur-xl transition-colors duration-300 ${
             hasBackground ? "bg-white/40 dark:bg-[#471f8d]/50 shadow-md backdrop-blur-md" 
             : "bg-transparent"
           }`}
         >
 
-          {navigationItems.map(({ name, to }, index) => {
+          { navigationItems.map(({ name, to }, index) => {
             const isActive = location.pathname === to; 
             return (
               <Link

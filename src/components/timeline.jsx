@@ -2,8 +2,7 @@ import { timelineItems } from "../constants/timeline";
 
 export default function Timeline() {
   return (
-    <div className="mx-auto my-12 max-w-7xl px-6 lg:px-8 py-8 lg:py-12">
-
+    <div className="mx-auto mb-12 max-w-7xl px-6 lg:px-8 pb-8 lg:pb-12">
       <div className="mx-auto pb-12 lg:pb-20 max-w-5xl font-mono text-center">
         <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-white sm:text-5xl">Experience</h2>
         <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
