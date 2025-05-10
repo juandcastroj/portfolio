@@ -18,11 +18,12 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  
   return (
     <>
       <nav
         aria-label="Global"
-        className={`font-mono animate-fade-down animate-duration-[1500ms] animate-delay-200 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8
+        className={`font-mono animate-fade-down animate-duration-[1500ms] animate-delay-400 mx-auto flex max-w-7xl items-center justify-end lg:justify-center p-6 lg:px-8
          ${
           hasBackground ? "" : "bg-transparent"
         }`}

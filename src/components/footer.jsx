@@ -1,4 +1,4 @@
-import { social } from "../constants/footer.jsx";
+import { social } from "../constants/footerIcons.jsx";
 
 export default function Footer () {
 

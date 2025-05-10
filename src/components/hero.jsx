@@ -3,7 +3,7 @@ import JD_photo from '../assets/images/hero/jd_photo.jpeg';
 export default function Hero() {
   
     return (
-      <div className="relative isolate -z-10 overflow-hidden pt-14 animate-fade-down animate-duration-[3000ms] animate-delay-1000">
+      <div className="relative isolate -z-10 overflow-hidden pt-14 animate-fade-down animate-duration-[3000ms] animate-delay-800">
           {/* <div
             aria-hidden="true"
             className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white dark:bg-[#2b0076] shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 dark:ring-[#2b0076] sm:-mr-80 lg:-mr-[22rem]"
