@@ -6,13 +6,13 @@ export default function Projects() {
     <div className="py-20 md:py-28 animate-fade-down animate-duration-[1500ms] animate-delay-400">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-mono">
         <div className="text-center xl:col-span-2 mb-12">
-          <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
             Main projects
           </h2>
           <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-            Below is a list view of my main fully works and collaborations for websites and include one mobile application developed throughout the last years as a software developer.
+          Below is a list of my major completed works and collaborations for websites, including a mobile app developed over the past few years as a software developer using different technologies, from HTML and vanilla JavaScript to frameworks like Vue JS or Flutter for mobile development.        
           </p>
-        </div>
+          </div>
 
         <ul role="list" className="space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
           {  projectsData.map(

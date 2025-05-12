@@ -10,7 +10,7 @@ export const timelineItems = [
       labor: 'CAD Draftsman',
       logo: FaramLogo,
       description:
-        'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
+        'Digitalize 2D plans from sketches using AutoCAD architectural software. Create 3D models using Revit software. Collaborate with architects and engineers to ensure accuracy and quality of designs.',
       date: 'Sept 2019',
       dateTime: '2019-09',
     },
@@ -19,7 +19,7 @@ export const timelineItems = [
       labor: 'Web Developer Jr',
       logo: BitheaderLogo,
       description:
-        'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
+        'Applying my initial self-taught knowledge at a small startup, creating some components and improving the user interface of client websites without using frameworks.',
       date: 'Mar 2021',
       dateTime: '2021-03',
     },
@@ -28,7 +28,7 @@ export const timelineItems = [
       labor: 'Frontend Trainee',
       logo: AcademiaGeekLogo,
       description:
-        'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
+        'Bootcamp part of a government initiative focused on frontend, where I learned all the basics and also how to use the React library for more modern projects. I also obtained my official certification as a developer.',
       date: 'Dec 2021',
       dateTime: '2021-12',
     },
@@ -37,7 +37,7 @@ export const timelineItems = [
       labor: 'Software Developer',
       logo: SessionForwardLogo,
       description:
-        'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
+        'Develop complete landing pages for customer, customized to their design specifications or with my own proposal. I also implemented new features for the sessionforward.com and abte.st websites using the Vue.js framework, Tailwind.css, Node.js and Postgreslq',
       date: 'Jun 2022',
       dateTime: '2022-05',
     },

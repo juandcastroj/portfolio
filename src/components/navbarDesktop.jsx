@@ -55,7 +55,7 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                 className={`text-base font-semibold ${
                   isActive
                   ? "bg-white/60 dark:bg-white/30 bg-opacity-50 rounded-full px-3 py-2 text-green-800 dark:text-white"
-                  : "text-green-800 dark:text-emerald-100"
+                  : "text-green-800 dark:text-gray-100"
                 }`}
               >
                 {name}

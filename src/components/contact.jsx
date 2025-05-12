@@ -9,7 +9,7 @@ export default function Contact() {
 
         <div className="relative px-6 lg:static lg:px-8 py-16 lg:py-28">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg font-mono animate-fade-right">
-            <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-blue-300 sm:text-5xl">
+            <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-200 sm:text-5xl">
               Get in touch
             </h2>
 

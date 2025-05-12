@@ -3,15 +3,14 @@ import { timelineItems } from "../constants/timeline";
 export default function Timeline() {
   return (
     <div className="mx-auto mb-12 max-w-7xl px-6 lg:px-8 pb-8 lg:pb-12">
-      <div className="mx-auto pb-12 lg:pb-20 max-w-5xl font-mono text-center">
+      <div className="mx-auto pb-12 lg:pb-20 max-w-5xl font-mono text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
         <h2 className="text-pretty text-4xl font-semibold tracking-tight text-green-900 dark:text-white sm:text-5xl">Experience</h2>
         <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-          We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-          best results for our clients.
+        Through last years i have been worked on different techs environments that allow me adapt to changes and use the most moderns develop tools. Lets see my latest job experiences 💻...
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4 animate-fade-down animate-duration-[3000ms] animate-delay-[1600ms]">
         {
           timelineItems.map(
           ({  dateTime,
