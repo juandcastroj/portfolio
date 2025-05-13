@@ -14,7 +14,7 @@ export default function Contact() {
             </h2>
 
             <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-            Let&apos;s work together on any project related to any of my known technologies.
+            I'd love to work together on anything related to my current tech stack—or dive into something new and exciting!
             </p>
             <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
               <div className="flex gap-x-4">

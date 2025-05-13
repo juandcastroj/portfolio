@@ -37,7 +37,7 @@ export const timelineItems = [
       labor: 'Software Developer',
       logo: SessionForwardLogo,
       description:
-        'Develop complete landing pages for customer, customized to their design specifications or with my own proposal. I also implemented new features for the sessionforward.com and abte.st websites using the Vue.js framework, Tailwind.css, Node.js and Postgreslq',
+        'Develop whole landing pages, customized to design specifications or with my own proposal. Also implemented new features for the sessionforward.com and abte.st websites using the Vue js framework, Tailwind css, Node js and Postgreslq.',
       date: 'Jun 2022',
       dateTime: '2022-05',
     },

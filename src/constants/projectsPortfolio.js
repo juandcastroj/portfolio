@@ -7,9 +7,9 @@ import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 export const projectsData = [
     {
       company: 'Interkey',
-      role: 'Frontend developer',
+      role: 'Designer and Frontend developer',
       imageUrl: InterkeyHero,
-      description: 'Design and develop the user interfaces for the main website for the company. The website is a landing page with a contact form and a blog section.',
+      description: 'Complete landing page design proposed and developed by me for a client in Arabic and English languages, using HTML, CSS, and vanilla JavaScript. Has a contact form and a blog section.',
       url: 'https://interkey2023.netlify.app/',
       repo: '#'    
     },
@@ -17,7 +17,7 @@ export const projectsData = [
       company: 'Siin shop',
       role: 'Frontend developer',
       imageUrl: SiinHero,
-      description: 'Design and develop the user interfaces for the main website for the company. The website is a landing page with a contact form and a blog section.',
+      description: 'Ecommerce landing Developed following mockup design guidelines and high site interactivity specifications. It features Arabic and English languages, as well as a blog section and contact form.',
       url: 'https://gorgeous-cucurucho-749274.netlify.app/',
       repo: '#'
     },
@@ -25,16 +25,16 @@ export const projectsData = [
       company: 'Tahsin Alwajiha',
       role: 'Frontend developer',
       imageUrl: TahsinHero,
-      description: 'Design and develop the user interfaces for the main website for the company. The website is a landing page with a contact form and a blog section.',
-      url: null,
+      description: 'Designed and developed the main website for a new arabic company. The site is fully responsive and has light and dark theme. It was developed using HTML, CSS, and JavaScript.',
+      url: 'https://tahsinalwajiha.com/',
       repo: '#'
     },
     {
       company: 'CoffeeStrap',
       role: 'Mobile developer',
       imageUrl: CoffeeStrapHero,
-      description: 'Design and develop the user interfaces for the main website for the company. The website is a landing page with a contact form and a blog section.',
-      url: null,
+      description: 'Mobile version of an existing web platform called coffeeStrap, published on Google Play and Appstore, built with Flutter for both Android and iOS operating systems.',
+      url: 'https://play.google.com/store/apps/details?id=com.coffeestrap.coffeestrap&hl=en&gl=US',
       repo: '#'
     },
 ]
