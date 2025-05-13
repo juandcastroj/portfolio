@@ -14,21 +14,22 @@ export default function Projects() {
             </p>
         </div>
 
+
         <ul role="list" className="space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
           {  projectsData.map(
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-10 sm:flex-row p-3 bg-transparent
+                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-3 bg-transparent
                            rounded-3xl ring-1 ring-slate-300 dark:ring-[#471f8d] hover:shadow-md hover:bg-white/30 dark:hover:bg-white/10 hover:backdrop-blur-md" >
               {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
                   <img
                     alt={company}
                     src={imageUrl}
-                    className="aspect-square w-96 xl:w-[36rem] h-80 flex-none rounded-none md:rounded-2xl"
+                    className="w-96 xl:w-[36rem] rounded-lg md:rounded-2xl"
                   />
 
-                <div className="max-w-xl flex-auto pt-6">
+                <div className="max-w-xl flex-auto pt-2 lg:pt-6 text-justify">
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">
                       {company}
