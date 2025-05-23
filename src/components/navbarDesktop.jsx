@@ -5,18 +5,19 @@ import ThemeSwitcher from "./themeSwitcher";
 import { useLocation } from "react-router-dom";
 
 export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
-  const [hasBackground, setHasBackground] = useState(false);
-  const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setHasBackground(currentScrollY > 80);
-    };
+    const [hasBackground, setHasBackground] = useState(false);
+    const location = useLocation();
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        setHasBackground(currentScrollY > 80);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
   
   return (

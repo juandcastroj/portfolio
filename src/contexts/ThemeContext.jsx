@@ -12,25 +12,34 @@ export const ThemeProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    const bgSection = document.querySelector('#bg-section');
+      const bgSection = document.querySelector('#bg-section');
+      const jdPhotoDark = document.querySelector('#jd-photo-dark');
+      const jdPhotoLight = document.querySelector('#jd-photo-light');
 
-    if (theme === "dark") {
-      
-      document.documentElement.classList.add("dark");
-      bgSection.classList.remove("background-light");
-      bgSection.classList.add("background-dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      bgSection.classList.remove("background-dark");
-      bgSection.classList.add("background-light");
-    }
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+      if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+            bgSection.classList.remove("background-light");
+            bgSection.classList.add("background-dark");
+            if (window.location.pathname === "/") {
+                jdPhotoLight.classList.add("hidden");
+                jdPhotoDark.classList.remove("hidden");
+            }
+      } else {
+            document.documentElement.classList.remove("dark");
+            bgSection.classList.remove("background-dark");
+            bgSection.classList.add("background-light");
+            if (window.location.pathname === "/") {
+                  jdPhotoDark.classList.add("hidden");
+                  jdPhotoLight.classList.remove("hidden");
+            }
+      }
+      localStorage.setItem("theme", theme);
+      }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
-  
+      const toggleTheme = () => {
+        setTheme((prev) => (prev === "light" ? "dark" : "light"));
+      };
+    
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}

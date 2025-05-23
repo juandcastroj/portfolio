@@ -1,3 +1,4 @@
+import NuestraTierraHero from '../assets/images/projects/NuestraTierra_hero.jpeg';
 import InterkeyHero from '../assets/images/projects/Interkey_hero.jpeg';
 import SiinHero from '../assets/images/projects/Siin_hero.jpeg';
 import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
@@ -5,6 +6,14 @@ import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 
 
 export const projectsData = [
+    {
+      company: 'Nuestratierraco',
+      role: 'Full stack developer',
+      imageUrl: NuestraTierraHero,
+      description: 'Complete landing page with ecommerce section full developed by me for a non-profit corporation. Using React js, vite and Ecwid for products manage.',
+      url: 'https://nuestratierraco.netlify.app/',
+      repo: '#'    
+    },
     {
       company: 'Interkey',
       role: 'Designer and Frontend developer',

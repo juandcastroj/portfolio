@@ -2,9 +2,7 @@ import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 
 export default function TodoSection() {
-
   return (
-    
     <form className='bg-gray-200 mx-auto p-12 xl:p-20'>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
@@ -12,7 +10,6 @@ export default function TodoSection() {
           <p className="mt-1 text-sm/6 text-gray-600">
             This information will be displayed publicly so be careful what you share.
           </p>
-
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-4">
               <label htmlFor="username" className="block text-sm/6 font-medium text-gray-900">
@@ -31,7 +28,7 @@ export default function TodoSection() {
                 </div>
               </div>
             </div>
-
+            
             <div className="col-span-full">
               <label htmlFor="about" className="block text-sm/6 font-medium text-gray-900">
                 About

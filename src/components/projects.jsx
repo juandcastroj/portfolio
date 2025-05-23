@@ -1,7 +1,6 @@
 import { projectsData } from "../constants/projectsPortfolio";
 
 export default function Projects() {
-
   return (
     <div className="py-20 md:py-28 animate-fade-down animate-duration-[1500ms] animate-delay-400">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-mono">
@@ -13,7 +12,6 @@ export default function Projects() {
             Below is a list of my completed works and collaborations for websites, including a mobile app developed over the past few years as a software developer using different technologies, since HTML and JavaScript vanilla to React, Vue js or Flutter for mobile development.        
             </p>
         </div>
-
 
         <ul role="list" className="space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
           {  projectsData.map(
@@ -28,7 +26,6 @@ export default function Projects() {
                     src={imageUrl}
                     className="w-96 xl:w-[36rem] rounded-lg md:rounded-2xl"
                   />
-
                 <div className="max-w-xl flex-auto pt-2 lg:pt-6 text-justify">
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">
