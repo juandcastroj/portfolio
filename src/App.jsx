@@ -43,19 +43,19 @@ export default function App() {
             <span></span>
 
           <Header/>
-          <main className="isolate">
-            <Routes>
-              <Route path='/' element={<Home/>}></Route>
-              <Route path='/contact' element={<ContactUsRoute/>}></Route>
-              <Route path='/projects' element={<ProjectsRoute/>}></Route>
-              <Route path='/stack' element={<StackRoute/>}></Route>
-              <Route path='/todo' element={<Todo/>}></Route>
-              <Route path='/search' element={<Search/>}></Route>
-              <Route path='/game' element={<Tiktaktoe/>}></Route>
-              <Route path='*' element={<Home/>}></Route>
-            </Routes>
-            <Footer/>
-          </main>
+            <main className="isolate font-serif antialiased">
+              <Routes>
+                <Route path='/' element={<Home/>}></Route>
+                <Route path='/contact' element={<ContactUsRoute/>}></Route>
+                <Route path='/projects' element={<ProjectsRoute/>}></Route>
+                <Route path='/stack' element={<StackRoute/>}></Route>
+                <Route path='/todo' element={<Todo/>}></Route>
+                <Route path='/search' element={<Search/>}></Route>
+                <Route path='/game' element={<Tiktaktoe/>}></Route>
+                <Route path='*' element={<Home/>}></Route>
+              </Routes>
+            </main>
+          <Footer/>
       </div>
     </BrowserRouter>
   )

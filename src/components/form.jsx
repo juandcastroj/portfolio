@@ -47,7 +47,7 @@ export function Form() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="px-6 lg:px-8 py-16 sm:py-20 lg:py-28 font-mono animate-fade-left"
+        className="px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
       >
         
         <div className="mx-auto max-w-xl lg:max-w-lg">

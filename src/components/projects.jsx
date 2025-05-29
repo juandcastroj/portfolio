@@ -3,7 +3,7 @@ import { projectsData } from "../constants/projectsPortfolio";
 export default function Projects() {
   return (
     <div className="py-20 md:py-28 animate-fade-down animate-duration-[1500ms] animate-delay-400">
-      <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-mono">
+      <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16">
         <div className="text-center xl:col-span-2 mb-12">
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
             Main projects

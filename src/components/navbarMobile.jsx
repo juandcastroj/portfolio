@@ -31,7 +31,7 @@ export function NavbarMobile({
 
           <div className="mt-28">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="py-24 font-mono flex flex-col text-center space-y-6">
+              <div className="py-24 flex flex-col text-center space-y-6">
                 {
                   navigationItems.map(({name, to}, index) => (
                   <Link

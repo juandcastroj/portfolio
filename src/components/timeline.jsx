@@ -3,7 +3,7 @@ import { timelineItems } from "../constants/timeline";
 export default function Timeline() {
   return (
     <div className="mx-auto mb-12 max-w-7xl px-6 lg:px-8 pb-8 lg:pb-12">
-      <div className="mx-auto pb-12 lg:pb-20 max-w-5xl font-mono text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
+      <div className="mx-auto pb-12 lg:pb-20 max-w-5xl text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
         <h2 className="text-4xl font-semibold text-green-900 dark:text-white sm:text-5xl">Experience</h2>
         <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
         Through last years i have been worked on different techs environments that allow me adapt to changes and use the most moderns develop tools. Lets see my latest job experiences 💻...
@@ -24,7 +24,7 @@ export default function Timeline() {
             <div key={index}>
               <time
                 dateTime={dateTime}
-                className="flex items-center text-base font-mono font-semibold text-green-900 dark:text-gray-200"
+                className="flex items-center text-base font-semibold text-green-900 dark:text-gray-200"
               >
                 <svg
                   viewBox="0 0 4 4"
@@ -55,7 +55,7 @@ export default function Timeline() {
                  </div>
 
                   <div>
-                      <p className="mt-2 text-sm text-justify font-mono text-gray-600 dark:text-gray-300">
+                      <p className="mt-2 text-sm text-justify text-gray-600 dark:text-gray-300">
                       {description}
                       </p>
                   </div>
