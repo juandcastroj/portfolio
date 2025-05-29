@@ -54,8 +54,8 @@ export default function App() {
                 <Route path='/game' element={<Tiktaktoe/>}></Route>
                 <Route path='*' element={<Home/>}></Route>
               </Routes>
+                <Footer/>
             </main>
-          <Footer/>
       </div>
     </BrowserRouter>
   )
