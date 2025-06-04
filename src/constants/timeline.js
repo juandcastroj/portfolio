@@ -10,16 +10,16 @@ export const timelineItems = [
       labor: 'CAD Draftsman',
       logo: FaramLogo,
       description:
-        'Digitalize 2D plans from sketches using AutoCAD architectural software. Create 3D models using Revit software. Collaborate with architects and engineers to ensure accuracy and quality of designs.',
+        'Digitalize 2D sketches using AutoCAD architectural software. Create 3D models using Solidworks software. Collaborate with architects and engineers to ensure accuracy and quality of designs.',
       date: 'Sept 2019',
       dateTime: '2019-09',
     },
     {
       company: 'Bitheader',
-      labor: 'Web Developer Jr',
+      labor: 'Developer Jr',
       logo: BitheaderLogo,
       description:
-        'Applying my initial self-taught knowledge at a small startup, creating some components and improving the user interface of client websites without using frameworks.',
+        'Applying my initial self-taught knowledge as a trainee developer, creating app components and improving the websites user interfaces for customers without logic or using frameworks, only Javascript vanilla.',
       date: 'Mar 2021',
       dateTime: '2021-03',
     },
@@ -28,7 +28,7 @@ export const timelineItems = [
       labor: 'Frontend Trainee',
       logo: AcademiaGeekLogo,
       description:
-        'Bootcamp part of a government initiative focused on frontend, where I learned all the basics and also how to use the React library for more modern projects. I also obtained my official certification as a developer.',
+        'Non-profit Bootcamp focused on frontend, where I learned all the basics and also how to use Javascript and React js for SPA on modern projects. Besides obtained my official certification as a web developer.',
       date: 'Dec 2021',
       dateTime: '2021-12',
     },

@@ -1,16 +1,14 @@
 import { useContext } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
-
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 export default function ThemeSwitcher () {
 
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-
     <button
       onClick={toggleTheme}
-      className="inline fixed top-4 lg:top-8 right-20 lg:right-8 px-4 py-2 transition justify-end"
+      className="inline fixed top-4 lg:top-8 right-20 lg:right-8 px-4 py-2 transition justify-end text-green-600"
     >
 
       { theme === "light" ?  

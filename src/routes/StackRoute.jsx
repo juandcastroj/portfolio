@@ -1,4 +1,4 @@
-import Stack from "../components/stack";
+import Stack from "../components/stack/Stack";
 
 export default function StackRoute () {
     return (
@@ -6,4 +6,4 @@ export default function StackRoute () {
             <Stack/>
         </>
     )
-}
+}   

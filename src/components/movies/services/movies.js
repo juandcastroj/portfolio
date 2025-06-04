@@ -1,3 +1,4 @@
+// JUST PRACTICING
 const APIKEY = '4287ad07'
 
 export const searchMovies = async ({search}) => {

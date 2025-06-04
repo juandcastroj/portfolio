@@ -1,6 +1,6 @@
 import Game from "../components/tiktaktoe/tiktaktoe";
 
-export default function Tiktaktoe() {
+export default function GameRoute() {
     
     return(
         <>

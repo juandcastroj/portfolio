@@ -17,33 +17,36 @@ export default function Contact() {
             I'd love to work together on anything related to my current tech stack—or dive into something new and exciting!
             </p>
             <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
+            
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <BuildingOffice2Icon aria-hidden="true" className="h-7 w-6 text-gray-500 dark:text-gray-200" />
                 </dt>
                 <dd className='dark:text-gray-200'>
                   Bogotá D.C, Colombia
                 </dd>
               </div>
-              <div className="flex gap-x-4">
+
+              <div className="flex gap-x-4 hover:text-gray-700 hover:font-semibold dark:text-gray-200">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
-                  <PhoneIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <PhoneIcon aria-hidden="true" className="h-7 w-6"/>
                 </dt>
                 <dd>
-                  <a href="tel:+57 320 484 6725" className="hover:text-gray-900 dark:text-gray-200">
+                  <a href="tel:+57 320 484 6725">
                     +57 320 484 6725
                   </a>
                 </dd>
               </div>
-              <div className="flex gap-x-4">
+
+              <div className="flex gap-x-4 hover:text-gray-700 hover:font-semibold dark:text-gray-200">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
-                  <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <EnvelopeIcon aria-hidden="true" className="h-7 w-6"/>
                 </dt>
                 <dd>
-                  <a href="mailto:juandavid4130@gmail.com" className="hover:text-gray-900 dark:text-gray-200">
+                  <a href="mailto:juandavid4130@gmail.com">
                     juandavid4130@gmail.com
                   </a>
                 </dd>

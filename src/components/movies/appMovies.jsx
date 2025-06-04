@@ -1,7 +1,7 @@
 import { useState , useEffect} from 'react'
-import { useMovies } from '../hooks/useMovies'
-import { useSearch } from '../hooks/useSearch'
-import Movies from './movies/movies'
+import { useMovies } from '../../hooks/searchMovies/useMovies'
+import { useSearch } from '../../hooks/searchMovies/useSearch'
+import Movies from './movies'
 
 export function AppMovies() {
     

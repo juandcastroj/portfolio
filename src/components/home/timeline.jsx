@@ -1,12 +1,12 @@
-import { timelineItems } from "../constants/timeline";
+import { timelineItems } from "../../constants/timeline";
 
 export default function Timeline() {
   return (
     <div className="mx-auto mb-12 max-w-7xl px-6 lg:px-8 pb-8 lg:pb-12">
-      <div className="mx-auto pb-12 lg:pb-20 max-w-5xl text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
+      <div className="mx-auto pb-12 lg:pb-20 max-w-4xl text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
         <h2 className="text-4xl font-semibold text-green-900 dark:text-white sm:text-5xl">Experience</h2>
-        <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-        Through last years i have been worked on different techs environments that allow me adapt to changes and use the most moderns develop tools. Lets see my latest job experiences 💻...
+        <p className="mt-6 text-lg text-gray-600 dark:text-gray-200">
+        Through last years I have been worked on different techs environments that allow me adapt to changes and use the most moderns develop tools to create goodlooking and good performance websites ans apps. Lets see my job experiences 💻...
         </p>
       </div>
 
@@ -40,7 +40,7 @@ export default function Timeline() {
                 />
               </time>
 
-              <div className="transition transform duration-300 hover:-translate-y-2">
+              <div className="transition hover:-translate-y-2 hover:duration-500">
                  
                  <div className="flex justify-start mt-12 font-mono">
                     <img src={logo} className="w-20 h-20 mr-4 rounded-lg" alt={`${company}+ ' company'`} />

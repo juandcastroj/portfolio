@@ -1,7 +1,7 @@
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 
-export default function TodoSection() {
+export default function Todo() {
   return (
     <form className='bg-gray-200 mx-auto p-12 xl:p-20'>
       <div className="space-y-12">

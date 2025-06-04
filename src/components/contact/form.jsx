@@ -13,7 +13,7 @@ export function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submit click ");
+    // console.log("submit click ");
     // fast validation
     if (
       !firstName.trim() ||
@@ -21,7 +21,7 @@ export function Form() {
       !email.trim() ||
       !message.trim()
     ) {
-      console.log("campos vacíos");
+      // console.log("campos vacíos");
       setError(true);
       return;
     } else {
@@ -40,7 +40,7 @@ export function Form() {
   };
 
   const ShowError = () => (
-    <div className="mx-6 text-red-600 my-2">All fields are mandatory</div>
+    <div className="mx-6 text-red-600 dark:text-orange-500 font-semibold my-2">All fields are mandatory.</div>
   );
 
   return (
@@ -49,9 +49,8 @@ export function Form() {
         onSubmit={handleSubmit}
         className="px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
       >
-        
         <div className="mx-auto max-w-xl lg:max-w-lg">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
             <div>
               <label
                 htmlFor="first-name"
@@ -67,7 +66,7 @@ export function Form() {
                   autoComplete="given-name"
                   value={firstName}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                 />
               </div>
             </div>
@@ -86,7 +85,7 @@ export function Form() {
                   autoComplete="family-name"
                   value={lastName}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                 />
               </div>
             </div>
@@ -105,7 +104,7 @@ export function Form() {
                   autoComplete="email"
                   value={email}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                 />
               </div>
             </div>
@@ -123,7 +122,7 @@ export function Form() {
                   rows={4}
                   value={message}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                 />
               </div>
             </div>
