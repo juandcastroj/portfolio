@@ -10,7 +10,12 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+            monserrat: ['Montserrat', 'sans-serif'],
+            oswald: ['Oswald', 'sans-serif'],
+        },
+    },
   },
   plugins: [
     tailwindcssAnimated

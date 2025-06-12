@@ -8,8 +8,7 @@ export default function Hero() {
       <div className="mx-auto max-w-5xl px-6 py-12 sm:py-28 lg:py-36 lg:px-8">
         <div className="mx-auto max-w-4xl lg:mx-0 lg:flex gap-12 lg:max-w-none">
           <div className="flex flex-col justify-between">
-
-              <h2 className="max-w-2xl text-balance text-3xl sm:text-4xl font-semibold tracking-tight text-green-900 dark:text-white lg:text-7xl lg:col-span-2 xl:col-auto">
+              <h2 className="font-montserrat max-w-2xl text-balance text-3xl sm:text-4xl font-semibold tracking-tight text-green-900 dark:text-white lg:text-7xl lg:col-span-2 xl:col-auto">
                 Hi. I&#39;m Juan David.
               </h2>
               <h1 className="max-w-2xl text-balance text-3xl sm:text-5xl font-semibold tracking-tight text-green-800 dark:text-white lg:text-7xl lg:col-span-2 xl:col-auto">
@@ -26,12 +25,12 @@ export default function Hero() {
           <img
               alt="JD photo"
               src={JD_photoDark}
-              className="hidden dark:block aspect-square w-full max-w-xl rounded-full object-cover lg:max-w-72 text-center"
+              className="hidden dark:block aspect-square mt-14 sm:mt-0 w-full max-w-xl rounded-full object-cover lg:max-w-72 text-center"
             />
           <img
               alt="JD photo"
               src={JD_photoLight}
-              className="dark:hidden aspect-square w-full max-w-xl rounded-full object-cover lg:max-w-72 text-center"
+              className="dark:hidden aspect-square mt-14 sm:mt-0 w-full max-w-xl rounded-full object-cover lg:max-w-72 text-center"
             /> 
         </div>
       </div>
