@@ -43,7 +43,7 @@ export default function Projects() {
                   <div className="flex items-center gap-4 mt-4 sm:mt-8 flex-row">
 
                     <a
-                      href={repo} target="_blank" rel="noopener noreferrer"
+                      href={url} target="_blank" rel="noopener noreferrer"
                       className="text-green-900 hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
                     >
                       <span className="sr-only">Deploy</span>
@@ -59,7 +59,7 @@ export default function Projects() {
                     </a>
                     
                     <a
-                        href={url} target="_blank" rel="noopener noreferrer"
+                        href={repo} target="_blank" rel="noopener noreferrer"
                         className="text-green-900 hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
                       >
                       <span className="sr-only">Code</span>
