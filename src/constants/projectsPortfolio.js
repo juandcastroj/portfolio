@@ -6,8 +6,6 @@ import ABtestHero from '../assets/images/projects/ABtest_hero.jpeg';
 import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
 import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 
-const CoffeeStrapUrl = 'coffeestrap.com';
-
 export const projectsData = [
     {
       company: 'NuestraTierra o',
@@ -15,7 +13,7 @@ export const projectsData = [
       imageUrl: NuestraTierraHero,
       description: 'Web application with ecommerce section full developed by me for a Colombian environmental ONG. Using React js, Firebase for autentication and customer manage, such as Ecwid for store and products manage.',
       url: 'https://nuestratierraco.netlify.app/',
-      repo: '#'    
+      repo: 'https://github.com/juandcastroj/nuestratierraco'    
     },
     {
       company: 'Interkey',
@@ -23,7 +21,7 @@ export const projectsData = [
       imageUrl: InterkeyHero,
       description: 'Landing page partially designed and fully developed by me for an Arabic customer on both languages (Arabic/English) guided by their mockups. Using HTML, CSS, and vanilla JavaScript only in main section. Includes a contact form and a blog section.',
       url: 'https://interkey2023.netlify.app/',
-      repo: '#'    
+      repo: 'https://bitbucket.org/maheshcasiraghi/interkey_web_2023/src/develop/'    
     },
     {
       company: 'SessionForward Inc',
@@ -31,7 +29,7 @@ export const projectsData = [
       imageUrl: SessionForwardHero,
       description: 'ABtesting web service application with components and some complete sections (onboarding, profile, etc) made by me. Using HTML, CSS, SASS, JavaScript and my first experience with Vue js framework in the dash. Node and Postgresql for backend.',
       url: 'https://www.sessionforward.com/',
-      repo: '#'    
+      repo: 'https://bitbucket.org/sessionforward/sessionforward_web/src/master/'    
     },
     {
       company: 'Siin shop',
@@ -39,7 +37,7 @@ export const projectsData = [
       imageUrl: SiinHero,
       description: 'Developed some sections (all previous main landing section and actual contact form, privacy policy and terms) following mockup design guidelines and high level interactivity specifications such as advanced animations. It features Arabic and English languages.',
       url: 'https://siin.shop/en',
-      repo: '#'
+      repo: 'https://bitbucket.org/sf-abtest/siin_shop_web/src/master/'
     },
     {
       company: 'ABtest',
@@ -47,7 +45,7 @@ export const projectsData = [
       imageUrl: ABtestHero,
       description: 'ABtesting light web application with onboarding and dashboard components developed by me. Using HTML, CSS, TailwindCSS and JavaScript. Node for backend and Postgresql for databases.',
       url: 'https://abte.st/login',
-      repo: '#'    
+      repo: 'https://bitbucket.org/sf-abtest/abtest_web/src/master/'    
     },
     {
       company: 'Tahsin Alwajiha',
@@ -55,13 +53,13 @@ export const projectsData = [
       imageUrl: TahsinHero,
       description: 'Designed and developed a demo landing for a promising Arabic company on 2022. Fully responsive and has light and dark colours theme. It was developed using HTML, CSS, TailwindCSS and JavaScript.',
       url: 'https://tahsinalwajiha.com/',
-      repo: '#'
+      repo: 'https://bitbucket.org/tahsin-alwajiha/new_authled_web/src/master'
     },
     {
       company: 'CoffeeStrap',
       role: 'Mobile developer',
       imageUrl: CoffeeStrapHero,
-      description: 'Mobile version cross platform (Android and IOS) for the languages web platform: ' + CoffeeStrapUrl + ' published on Google Play Appstore, built with Flutter framework and Node js.',
+      description: 'Mobile version cross platform (Android and IOS) for the languages web platform coffeestrap.com published on Google Play Appstore, built with Flutter framework and Node js.',
       url: 'https://play.google.com/store/apps/details?id=com.coffeestrap.coffeestrap&hl=en&gl=US',
       repo: '#'
     },
