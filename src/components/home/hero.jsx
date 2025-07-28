@@ -17,7 +17,7 @@ export default function Hero() {
               <div className="my-2 sm:my-8 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-base sm:text-lg md:text-xl lg:mt-6 font-medium text-gray-500 dark:text-gray-200">
                     Focused on frontend, with a full-stack mindset. Love to learn and share knowledge and experiences;
-                    Passionate of technology, music and bicycles. Trust this tools help to create a better world for all. Welcome... 
+                    Passionate of technology, music and bicycles. Trust this tools help to create a better world for all. 
                 </p>
               </div>
           </div>
