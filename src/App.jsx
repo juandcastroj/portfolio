@@ -1,7 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/header'
 import Footer from './components/footer'
-
 import HomeRoute from './routes/HomeRoute';
 import Search from './routes/MoviesRoute';
 import Tiktaktoe from './routes/GameRoute';
@@ -14,7 +13,6 @@ import TodoRoute from './routes/TodoRoute';
 export default function App() {
 
   return (
-    <BrowserRouter>
       <div id="bg-section">
             {/* SPANS FOR DARK BACKGROUND ANIMATION ONLY! */}
             <span></span>
@@ -45,7 +43,8 @@ export default function App() {
             <span></span>
 
           <Header/>
-            <main className="isolate font-serif antialiased">
+
+            <main className="isolate antialiased">
               <Routes>
                 <Route path='/' element={<HomeRoute/>}></Route>
                 <Route path='/contact' element={<ContactRoute/>}></Route>
@@ -59,9 +58,8 @@ export default function App() {
                 <Route path='/game' element={<Tiktaktoe/>}></Route>
               </Routes>
 
-                <Footer/>
+              <Footer/>
             </main>
       </div>
-    </BrowserRouter>
   )
 }

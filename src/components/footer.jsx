@@ -3,7 +3,7 @@ import { social } from "../constants/footerIcons.jsx";
 export default function Footer () {
 
     return(
-        <footer className="mx-auto mt-16 max-w-7xl px-6 sm:mt-0 lg:px-8 font-serif antialiased">
+        <footer className="mx-auto mt-16 max-w-7xl px-6 sm:mt-0 lg:px-8 antialiased">
           <div className="pb-8">
             <div className="mt-16 border-t border-gray-900/10 dark:border-gray-200 pt-8 sm:mt-0 md:flex md:items-center md:justify-between">
               <div className="flex gap-x-6 md:order-2">

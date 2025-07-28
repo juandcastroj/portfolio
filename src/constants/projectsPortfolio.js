@@ -1,5 +1,6 @@
 import NuestraTierraHero from '../assets/images/projects/NuestraTierra_hero.jpeg';
 import InterkeyHero from '../assets/images/projects/Interkey_hero.jpeg';
+import SessionForwardHero from '../assets/images/projects/SessionForward_dash.jpeg';
 import SiinHero from '../assets/images/projects/Siin_hero.jpeg';
 import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
 import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
@@ -23,6 +24,14 @@ export const projectsData = [
       repo: '#'    
     },
     {
+      company: 'SessionForward Inc',
+      role: 'Web developer',
+      imageUrl: SessionForwardHero,
+      description: 'ABtesting web service application that has my work on different dashboard components and some complete sections (onboarding, profile, etc), using HTML, CSS, JavaScript and Vue js framework. Node js for backend and Postgresql for database.',
+      url: 'https://www.sessionforward.com/',
+      repo: '#'    
+    },
+    {
       company: 'Siin shop',
       role: 'Frontend developer',
       imageUrl: SiinHero,
@@ -34,7 +43,7 @@ export const projectsData = [
       company: 'Tahsin Alwajiha',
       role: 'Frontend developer',
       imageUrl: TahsinHero,
-      description: 'Designed and developed the main website for a new arabic company. The site is fully responsive and has light and dark theme. It was developed using HTML, CSS, and JavaScript.',
+      description: 'Designed and developed a demo website for a promising arabic company on 2022. This site is fully responsive and has light and dark theme. It was developed using HTML, CSS, and JavaScript.',
       url: 'https://tahsinalwajiha.com/',
       repo: '#'
     },
@@ -42,7 +51,7 @@ export const projectsData = [
       company: 'CoffeeStrap',
       role: 'Mobile developer',
       imageUrl: CoffeeStrapHero,
-      description: 'Mobile version of an existing web platform called coffeeStrap, published on Google Play and Appstore, built with Flutter for both Android and iOS operating systems.',
+      description: 'Mobile version cross platform (Android and IOS) for an existing languages web platform called coffeeStrap, published on Google Play and Appstore, built with Flutter framework.',
       url: 'https://play.google.com/store/apps/details?id=com.coffeestrap.coffeestrap&hl=en&gl=US',
       repo: '#'
     },

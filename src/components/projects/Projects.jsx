@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div className="py-20 md:py-28 animate-fade-down animate-duration-[1500ms] animate-delay-400">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16">
-        <div className="text-center xl:col-span-2 mb-12">
+        <div className="text-center xl:col-span-2 mb-12 mx-auto max-w-4xl">
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
             Main projects
           </h2>
@@ -13,13 +13,14 @@ export default function Projects() {
             </p>
         </div>
 
+
         <ul role="list" className="space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
           {  projectsData.map(
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-3 bg-transparent
-                           rounded-3xl ring-1 ring-slate-300 dark:ring-[#471f8d] hover:shadow-md hover:bg-white/30 dark:hover:bg-white/10 hover:backdrop-blur-md" >
+                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-3 md:pr-12 cursor-pointer
+                           border-[1px] dark:border-0 rounded-3xl hover:shadow-md bg-white/10 hover:bg-white/30 dark:hover:bg-white/20 hover:backdrop-blur-md" >
               {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
                   <img
                     alt={company}

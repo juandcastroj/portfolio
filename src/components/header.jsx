@@ -4,7 +4,6 @@ import { NavbarMobile } from './navbar/NavbarMobile'
 import { NavbarDesktop } from './navbar/NavbarDesktop'
 
 export default function Header() {
-
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     const handleMobileMenu = () => {
@@ -12,7 +11,7 @@ export default function Header() {
     }
 
     return ( 
-        <header className="fixed inset-x-0 top-0 z-50 font-serif antialiased">
+        <header className="fixed inset-x-0 top-0 z-50 antialiased">
             <NavbarDesktop navigationItems={navBarItems} handleMobileMenu={handleMobileMenu}/>
             <NavbarMobile navigationItems={navBarItems} handleMobileMenu={handleMobileMenu} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
         </header>
