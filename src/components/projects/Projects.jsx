@@ -19,7 +19,7 @@ export default function Projects() {
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-6 lg:p-3 lg:pr-12
+                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-6 lg:p-3 xl:pr-12
                            border-[1px] dark:border-0 rounded-3xl hover:shadow-md 
                            bg-white/10 hover:bg-white/30 dark:hover:bg-white/20 hover:backdrop-blur-md" >
               {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}

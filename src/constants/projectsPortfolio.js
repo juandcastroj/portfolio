@@ -27,7 +27,7 @@ export const projectsData = [
       company: 'SessionForward Inc',
       role: 'Web developer',
       imageUrl: SessionForwardHero,
-      description: 'ABtesting web service application with components and some complete sections (onboarding, profile, etc) made by me. Using HTML, CSS, SASS, JavaScript and my first experience with Vue js framework in the dash. Node and Postgresql for backend.',
+      description: 'ABtesting web service application with components and some complete sections (onboarding, profile, etc) made by me. It was my first experience using Vue js framework in the dashborad and Node for backend.',
       url: 'https://www.sessionforward.com/',
       repo: 'https://bitbucket.org/sessionforward/sessionforward_web/src/master/'    
     },
@@ -43,7 +43,7 @@ export const projectsData = [
       company: 'ABtest',
       role: 'Web developer',
       imageUrl: ABtestHero,
-      description: 'ABtesting light web application with onboarding and dashboard components developed by me. Using HTML, CSS, TailwindCSS and JavaScript. Node for backend and Postgresql for databases.',
+      description: 'Lighter version web app than (SessionForward ⬆️) for ABtesting with some onboarding and dashboard components developed by me. Using HTML, CSS, TailwindCSS and JavaScript. Node for backend and Postgresql for databases.',
       url: 'https://abte.st/login',
       repo: 'https://bitbucket.org/sf-abtest/abtest_web/src/master/'    
     },
