@@ -1,7 +1,8 @@
 import NuestraTierraHero from '../assets/images/projects/NuestraTierra_hero.jpeg';
 import InterkeyHero from '../assets/images/projects/Interkey_hero.jpeg';
-import SessionForwardHero from '../assets/images/projects/SessionForward_dash.jpeg';
+import SessionForwardHero from '../assets/images/projects/SessionForward_hero.jpeg';
 import SiinHero from '../assets/images/projects/Siin_hero.jpeg';
+import ABtestHero from '../assets/images/projects/ABtest_hero.jpeg';
 import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
 import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 
@@ -9,7 +10,7 @@ const CoffeeStrapUrl = 'coffeestrap.com';
 
 export const projectsData = [
     {
-      company: 'Nuestratierraco',
+      company: 'NuestraTierra o',
       role: 'Web Developer',
       imageUrl: NuestraTierraHero,
       description: 'Web application with ecommerce section full developed by me for a Colombian environmental ONG. Using React js, Firebase for autentication and customer manage, such as Ecwid for store and products manage.',
@@ -20,7 +21,7 @@ export const projectsData = [
       company: 'Interkey',
       role: 'Designer and Frontend developer',
       imageUrl: InterkeyHero,
-      description: 'Complete landing page design proposed and developed by me for a client in Arabic and English languages, using HTML, CSS, and vanilla JavaScript for the MVP. Includes a contact form and a blog section.',
+      description: 'Landing page partially designed and fully developed by me for an Arabic customer on both languages (Arabic/English) guided by their mockups. Using HTML, CSS, and vanilla JavaScript only in main section. Includes a contact form and a blog section.',
       url: 'https://interkey2023.netlify.app/',
       repo: '#'    
     },
@@ -28,7 +29,7 @@ export const projectsData = [
       company: 'SessionForward Inc',
       role: 'Web developer',
       imageUrl: SessionForwardHero,
-      description: 'ABtesting web service application that has my work on different components and some complete sections (onboarding, profile, etc), using HTML, CSS, JavaScript and my first experience with Vue js framework in the dashboard. Node js for backend and Postgresql for database.',
+      description: 'ABtesting web service application with components and some complete sections (onboarding, profile, etc) made by me. Using HTML, CSS, SASS, JavaScript and my first experience with Vue js framework in the dash. Node and Postgresql for backend.',
       url: 'https://www.sessionforward.com/',
       repo: '#'    
     },
@@ -41,10 +42,18 @@ export const projectsData = [
       repo: '#'
     },
     {
+      company: 'ABtest',
+      role: 'Web developer',
+      imageUrl: ABtestHero,
+      description: 'ABtesting light web application with onboarding and dashboard components developed by me. Using HTML, CSS, TailwindCSS and JavaScript. Node for backend and Postgresql for databases.',
+      url: 'https://abte.st/login',
+      repo: '#'    
+    },
+    {
       company: 'Tahsin Alwajiha',
       role: 'Frontend developer',
       imageUrl: TahsinHero,
-      description: 'Designed and developed a demo website landing for a promising arabic company on 2022. Fully responsive and has light and dark colours theme. It was developed using HTML, CSS, and JavaScript.',
+      description: 'Designed and developed a demo landing for a promising Arabic company on 2022. Fully responsive and has light and dark colours theme. It was developed using HTML, CSS, TailwindCSS and JavaScript.',
       url: 'https://tahsinalwajiha.com/',
       repo: '#'
     },
