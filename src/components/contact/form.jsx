@@ -132,7 +132,7 @@ export function Form() {
             { error ? <ShowError /> : null }
             <button
               type="submit"
-              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white dark:text-gray-800 shadow-sm bg-green-900 dark:bg-blue-200 hover:bg-green-700 dark:hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white dark:text-gray-800 shadow-sm bg-green-900 hover:bg-green-700 dark:bg-blue-200 dark:hover:bg-blue-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Send message
             </button>
