@@ -28,7 +28,7 @@ export const projectsData = [
       role: 'Web developer',
       imageUrl: SessionForwardHero,
       description: 'ABtesting web service application with components and some complete sections (onboarding, profile, etc) made by me. It was my first experience using Vue js framework in the dashboard and Node js for backend.',
-      url: 'https://www.sessionforward.com/',
+      url: 'https://www.sessionforward.com/login',
       repo: 'https://bitbucket.org/sessionforward/sessionforward_web/src/master/'    
     },
     {

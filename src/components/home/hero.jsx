@@ -5,7 +5,7 @@ export default function Hero() {
   
   return (
     <div className="relative isolate -z-10 overflow-hidden pt-14 animate-fade-down animate-duration-[3000ms] animate-delay-800">
-      <div className="mx-auto max-w-5xl px-6 py-12 sm:py-28 lg:py-36 lg:px-8">
+      <div className="mx-auto max-w-5xl p-14 sm:py-28 lg:py-36 lg:px-8">
         <div className="mx-auto max-w-4xl lg:mx-0 lg:flex gap-12 lg:max-w-none">
           <div className="flex flex-col justify-between">
               <h2 className="font-montserrat max-w-2xl text-balance text-3xl sm:text-4xl font-semibold tracking-tight text-green-900 dark:text-white lg:text-7xl lg:col-span-2 xl:col-auto">

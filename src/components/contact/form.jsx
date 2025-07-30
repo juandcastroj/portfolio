@@ -1,53 +1,11 @@
-import { useState } from "react";
 
-export function Form() {
-  
-  const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
-  });
-  const { firstName, lastName, email, message } = form;
-  const [error, setError] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // console.log("submit click ");
-    // fast validation
-    if (
-      !firstName.trim() ||
-      !lastName.trim() ||
-      !email.trim() ||
-      !message.trim()
-    ) {
-      // console.log("campos vacíos");
-      setError(true);
-      return;
-    } else {
-      setError(false);
-    }
-
-    console.log(firstName, lastName, email, message);
-    setForm({ firstName: "", lastName: "", email: "", message: "" });
-  };
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const ShowError = () => (
-    <div className="mx-6 text-red-600 dark:text-orange-500 font-semibold my-2">All fields are mandatory.</div>
-  );
+export function Form( { handleSubmit, handleChange, firstName, lastName, email, message, error, ShowError } ) {
 
   return (
     <>
       <form
         onSubmit={handleSubmit}
-        className="px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
+        className="hidden sm:block px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
       >
         <div className="mx-auto max-w-xl lg:max-w-lg">
           <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">

@@ -9,7 +9,7 @@ export default function Projects() {
             Main projects 🗂️
           </h2>
             <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-            Below is a list of my completed works and collaborations for websites, including a mobile app developed over the past few years as a software developer using different technologies, since HTML and JavaScript vanilla to React, Vue js or Flutter for mobile development.        
+            Below is a list of my completed works and collaborations for websites, including a mobile app developed over the past few years as a software developer using different technologies, from HTML and JavaScript vanilla until React, Vue js or Flutter for mobile development.        
             </p>
         </div>
 

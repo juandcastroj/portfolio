@@ -2,7 +2,7 @@
 export const social = [
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/juan-david-castro-025749a6/',
+      href: 'https://www.linkedin.com/in/juan-david-jaramillo-025749a6/',
       icon: (props) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                 <path
