@@ -16,8 +16,8 @@ export default function Footer () {
                   ))
                 }
               </div>
-              <p className="mt-8 text-lg text-[#14532d] dark:text-gray-200 md:order-1 md:mt-0">
-                &copy; 2025 JD Castro.
+              <p className="mt-8 text-base font-semibold text-[#14532d] dark:text-gray-200 md:order-1 md:mt-0">
+                &copy; jdjaramillo  🇨🇴 ☕
               </p>
             </div>
           </div>

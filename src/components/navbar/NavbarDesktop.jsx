@@ -14,11 +14,9 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
         const currentScrollY = window.scrollY;
         setHasBackground(currentScrollY > 80);
       };
-
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
   
   return (
     <>

@@ -12,12 +12,14 @@ export default function Hero() {
                 Hi. I&#39;m Juan David.
               </h2>
               <h1 className="max-w-2xl text-balance text-3xl sm:text-5xl font-semibold tracking-tight text-green-800 dark:text-white lg:text-7xl lg:col-span-2 xl:col-auto">
-                Developer. 👨🏻‍💻
+                Developer.  ⌨
               </h1>
               <div className="my-2 sm:my-8 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-base sm:text-lg md:text-xl lg:mt-6 font-normal text-gray-500 dark:text-gray-200">
-                    Focused on frontend, with a full-stack mindset. Love to learn and share knowledge and experiences;
-                    Passionate of technology, music and bicycles. Trust this tools help to create a better world for all. 
+                    Focused on frontend, with a full-stack mindset.
+                    I enjoy learning and sharing knowledge, 
+                    and I’m passionate about technology, music, running and cycling.
+                    I believe these tools can help us build a better world for everyone. 
                 </p>
               </div>
           </div>

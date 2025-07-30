@@ -19,7 +19,7 @@ export const timelineItems = [
       labor: 'Developer Jr',
       logo: BitheaderLogo,
       description:
-        'Applying my initial self-taught knowledge as a trainee developer, creating app components and improving the websites user interfaces for customers without logic or using frameworks, only Javascript vanilla.',
+        'Applying my initial self-taught knowledge as a trainee developer, creating app components and improving the websites user interfaces for customers without advanced logic or frameworks, only vanilla JavaScript.',
       date: 'Mar 2021',
       dateTime: '2021-03',
     },
@@ -28,7 +28,7 @@ export const timelineItems = [
       labor: 'Frontend Trainee',
       logo: AcademiaGeekLogo,
       description:
-        'Non-profit Bootcamp focused on frontend, where I learned all the basics and also how to use Javascript and React js for SPA on modern projects. Besides obtained my official certification as a web developer.',
+        'Non-profit Bootcamp focused on frontend, where I learned all the basics and also how to use Javascript and React js for SPA on modern projects. Besides obtained my official certification as a Frontend web developer.',
       date: 'Dec 2021',
       dateTime: '2021-12',
     },
@@ -37,7 +37,7 @@ export const timelineItems = [
       labor: 'Software Developer',
       logo: SessionForwardLogo,
       description:
-        'Develop whole landing pages, customized to design specifications or with my own proposal. Also implemented new features for the sessionforward.com and abte.st websites using the Vue js framework, Tailwind css, Node js and Postgreslq.',
+        'Develop whole landing pages, customized to design specifications or with my own proposal. Also implemented new features for the sessionforward.com and abte.st websites using the Vue js framework, Tailwind css, Node js and Postgreslq in my first experience with backend.',
       date: 'Jun 2022',
       dateTime: '2022-05',
     },

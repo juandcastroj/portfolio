@@ -12,7 +12,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: #36175e;
+    background: #130820;
     overflow: hidden;
 }
 
@@ -57,7 +57,7 @@
     box-shadow: -100vmin 0 12.932581557859477vmin currentColor;
 }
 .background-dark span:nth-child(3) {
-    color: #583C87;
+    color: #291946;
     top: 64%;
     left: 1%;
     animation-duration: 35s;
@@ -66,7 +66,7 @@
     box-shadow: -100vmin 0 13.431585910395379vmin currentColor;
 }
 .background-dark span:nth-child(4) {
-    color: #583C87;
+    color: #2d1555;
     top: 44%;
     left: 66%;
     animation-duration: 294s;
@@ -138,7 +138,7 @@
     box-shadow: 100vmin 0 12.779970865407122vmin currentColor;
 }
 .background-dark span:nth-child(12) {
-    color: #3f1c3c;
+    color: #31112f;
     top: 46%;
     left: 96%;
     animation-duration: 237s;
