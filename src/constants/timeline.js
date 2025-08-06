@@ -3,7 +3,6 @@ import BitheaderLogo from '../assets/images/timeline/Bitheader_logo.jpeg';
 import AcademiaGeekLogo from '../assets/images/timeline/AcademiaGeek_logo.jpeg';
 import SessionForwardLogo from '../assets/images/timeline/SessionForward_logo.jpeg';
 
-
 export const timelineItems = [
     {
       company: 'Faram Engineering',
@@ -33,7 +32,7 @@ export const timelineItems = [
       dateTime: '2021-12',
     },
     {
-      company: 'SessionForward',
+      company: 'SessionForward Inc (USA)',
       labor: 'Software Developer',
       logo: SessionForwardLogo,
       description:
