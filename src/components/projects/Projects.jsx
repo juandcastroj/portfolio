@@ -9,8 +9,7 @@ export default function Projects() {
             Main projects
           </h2>
             <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-            Below is a list of my completed works and collaborations for websites, including a mobile app developed over the past few years as a software developer using different technologies, from HTML and JavaScript vanilla until React, Vue js or Flutter for mobile development.        
-            </p>
+              Below is a list of my completed works and collaborations for websites over the past few years as a software developer using different technologies, from Figma, HTML, JavaScript vanilla, React js, Vue js for frontend until node and postgresql for backend, even Flutter for multiplatform mobile development.             </p>
         </div>
 
         <ul role="list" className="space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">

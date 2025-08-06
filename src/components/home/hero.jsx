@@ -17,10 +17,10 @@ export default function Hero() {
               </h1>
               <div className="my-2 sm:my-8 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-base md:text-xl lg:mt-6 font-normal text-gray-500 dark:text-gray-200">
-                    Specialized on frontend and app UI/UX., with a full-stack mindset.
-                    I enjoy learning and sharing knowledge, 
+                    Specialized on frontend and app UI/UX, with a full-stack mindset.
+                      I enjoy learning and sharing knowledge, 
                     and I’m passionate about technology, music, boxing and cycling.
-                    I believe these tools can help us build a better world for everyone. 
+                    I strongly believe these tools can help us build a better world for everyone. Ⓐ
                 </p>
               </div>
           </div>
@@ -28,12 +28,12 @@ export default function Hero() {
           <img
               alt="JD photo"
               src={JD_photoDark}
-              className="hidden dark:block aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-left animate-duration-[3000ms] animate-delay-800"
+              className="hidden dark:block aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-left animate-duration-[3000ms] animate-delay-800 shadow-sm"
             />
           <img
               alt="JD photo"
               src={JD_photoLight}
-              className="dark:hidden aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-left animate-duration-[3000ms] animate-delay-800"
+              className="dark:hidden aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-left animate-duration-[3000ms] animate-delay-800 shadow-lg"
             /> 
 
         </div>
