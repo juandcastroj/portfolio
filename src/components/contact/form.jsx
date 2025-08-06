@@ -1,20 +1,23 @@
-
-export function Form( { handleSubmit, handleChange, firstName, lastName, email, message, error, ShowError } ) {
-
+export function Form({ firstName, lastName, email, message, handleChange, error, ShowError }) {
   return (
     <>
       <form
-        onSubmit={handleSubmit}
+        action="https://formsubmit.co/juandavid4130@gmail.com"
+        method="POST"
         className="hidden sm:block px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
       >
+        {/* Config extra para seguridad */}
+        <input type="hidden" name="_next" value="http://judajar.netlify.app/email-sent" />
+        <input type="hidden" name="_captcha" value="false" />
+
         <div className="mx-auto max-w-xl lg:max-w-lg">
-          <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
                 htmlFor="first-name"
                 className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
               >
-                First name
+                Nombre
               </label>
               <div className="mt-2.5">
                 <input
@@ -24,7 +27,8 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
                   autoComplete="given-name"
                   value={firstName}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                  required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
             </div>
@@ -33,7 +37,7 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
                 htmlFor="last-name"
                 className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
               >
-                Last name
+                Apellido
               </label>
               <div className="mt-2.5">
                 <input
@@ -43,7 +47,8 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
                   autoComplete="family-name"
                   value={lastName}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                  required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
             </div>
@@ -52,7 +57,7 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
                 htmlFor="email"
                 className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
               >
-                Email
+                Correo
               </label>
               <div className="mt-2.5">
                 <input
@@ -62,7 +67,8 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
                   autoComplete="email"
                   value={email}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                  required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
             </div>
@@ -71,7 +77,7 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
                 htmlFor="message"
                 className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
               >
-                Message
+                Mensaje
               </label>
               <div className="mt-2.5">
                 <textarea
@@ -80,7 +86,8 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
                   rows={4}
                   value={message}
                   onChange={handleChange}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                  required
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
             </div>
@@ -90,9 +97,9 @@ export function Form( { handleSubmit, handleChange, firstName, lastName, email, 
             { error ? <ShowError /> : null }
             <button
               type="submit"
-              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white dark:text-gray-800 shadow-sm bg-green-900 hover:bg-green-700 dark:bg-blue-200 dark:hover:bg-blue-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm bg-green-800 hover:bg-green-700 dark:bg-black dark:hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
-              Send message
+              Enviar
             </button>
           </div>
         </div>

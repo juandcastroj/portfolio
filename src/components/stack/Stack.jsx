@@ -4,7 +4,7 @@ export default function Stack() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-5xl text-center animate-fade-down animate-duration-[1500ms] animate-delay-400">
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl pt-8">
-           🚀 Technologies 🕹️
+            Technologies stack 
           </h2>
         </div>
         <ul

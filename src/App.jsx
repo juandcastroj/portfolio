@@ -9,6 +9,8 @@ import ProjectsRoute from './routes/ProjectsRoute';
 import StackRoute from './routes/StackRoute';
 import './assets/css/bg.css'
 import TodoRoute from './routes/TodoRoute';
+import EmailSentRoute from './routes/EmailSentRoute';
+import BlogRoute from './routes/BlogRoute';
 
 export default function App() {
 
@@ -48,7 +50,9 @@ export default function App() {
               <Routes>
                 <Route path='/' element={<HomeRoute/>}></Route>
                 <Route path='/contact' element={<ContactRoute/>}></Route>
+                <Route path='/email-sent' element={<EmailSentRoute/>}></Route>
                 <Route path='/projects' element={<ProjectsRoute/>}></Route>
+                <Route path='/blog' element={<BlogRoute/>}></Route>
                 <Route path='/stack' element={<StackRoute/>}></Route>
                 <Route path='*' element={<HomeRoute/>}></Route>
 

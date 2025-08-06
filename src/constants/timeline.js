@@ -6,7 +6,7 @@ import SessionForwardLogo from '../assets/images/timeline/SessionForward_logo.jp
 
 export const timelineItems = [
     {
-      company: 'Faram Ingenieros',
+      company: 'Faram Engineering',
       labor: 'CAD Draftsman',
       logo: FaramLogo,
       description:

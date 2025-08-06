@@ -10,13 +10,12 @@ export default function Contact() {
         <div className="relative px-6 lg:static lg:px-8 py-48 sm:py-16 lg:py-28">
           <div className="mx-auto max-h-full max-w-xl lg:mx-0 lg:max-w-lg animate-fade-right">
             <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-200 sm:text-5xl">
-              Get in touch 👇
+              Get in touch 📧
             </h2>
-
-            <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-                I'd love to work together on anything related to my current tech stack—or dive into something new and exciting!
-            </p>
-            <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
+              <p className="mt-8 text-lg/8 text-gray-600 dark:text-gray-200">
+                  To work together on anything related to my current tech stack or dive into new project ideas.
+              </p>
+            <dl className="mt-10 space-y-4 text-xl sm:text-base/7 text-gray-600">
 
               <div className="flex gap-x-4 hover:text-gray-700 font-semibold dark:text-gray-200">
                 <dt className="flex-none">

@@ -17,7 +17,7 @@ export function NavbarMobile({
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-[9999] w-full overflow-y-auto bg-[#f8ff99] dark:bg-[#36175E] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-[9999] w-full overflow-y-auto bg-[#f8ff99] dark:bg-[#140824] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center right-6 top-6 absolute">
             <button
               type="button"
