@@ -11,7 +11,7 @@ export default function Footer () {
                   social.map((item) => (
                   <a key={item.name} href={item.href} className="text-[#14532d] dark:text-gray-200 hover:text-gray-500 dark:hover:text-gray-400" target="_blank" rel="noopener noreferrer">
                     <span className="sr-only">{item.name}</span>
-                    <item.icon aria-hidden="true" className="size-8" />
+                    <item.icon aria-hidden="true" className="size-8 items-center" />
                   </a>
                   ))
                 }

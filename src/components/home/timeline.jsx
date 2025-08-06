@@ -42,7 +42,7 @@ export default function Timeline() {
 
               <div className="transition hover:-translate-y-2 hover:duration-500">
                  
-                 <div className="flex justify-start mt-12 font-mono">
+                 <div className="flex justify-start mt-12">
                     <img src={logo} className="w-20 h-20 mr-4 rounded-lg" alt={`${company}+ ' company'`} />
                     <div className="my-auto">
                       <p className="mt-0 text-lg/8 font-semibold tracking-tight text-green-900 dark:text-blue-300">
