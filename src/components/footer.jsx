@@ -21,7 +21,7 @@ export default function Footer () {
             </p> */}
 
             <p className="mt-8 text-lg font-semibold text-[#14532d] dark:text-gray-200 md:order-1 md:mt-0">
-               jddjaramillo  Ⓐ
+              Ⓐ jddjaramillo  
             </p>
           </div>
         </div>
