@@ -28,12 +28,12 @@ export default function Hero() {
           <img
               alt="JD photo"
               src={JD_photoDark}
-              className="hidden dark:block aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-left animate-duration-[3000ms] animate-delay-800 shadow-sm"
+              className="hidden dark:block aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-down sm:animate-fade-left animate-duration-[3000ms] animate-delay-800 shadow-sm"
             />
           <img
               alt="JD photo"
               src={JD_photoLight}
-              className="dark:hidden aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-left animate-duration-[3000ms] animate-delay-800 shadow-lg"
+              className="dark:hidden aspect-square mx-auto mt-12 sm:mt-8 md:mt-0 w-full rounded-full object-cover max-w-56 lg:max-w-72 text-center animate-fade-down sm:animate-fade-left animate-duration-[3000ms] animate-delay-800 shadow-lg"
             /> 
 
         </div>
