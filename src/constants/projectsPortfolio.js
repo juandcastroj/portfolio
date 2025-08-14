@@ -19,7 +19,7 @@ export const projectsData = [
       company: 'Interkey',
       role: 'Designer and Frontend developer',
       imageUrl: InterkeyHero,
-      description: 'Landing page partially designed and fully developed by me for an Arabic customer on both languages (Arabic/English) guided by their mockups. Using HTML, CSS, and vanilla JavaScript only in main section. Includes a contact form and a blog section.',
+      description: 'Landing page demo partially designed and fully developed by me for an Arabic company on both languages (Arabic/English) guided by their mockups. Using HTML, CSS, and vanilla JavaScript only in main section. Includes a contact form and a blog section.',
       url: 'https://interkey2023.netlify.app/',
       repo: 'https://bitbucket.org/maheshcasiraghi/interkey_web_2023/src/develop/'    
     },
