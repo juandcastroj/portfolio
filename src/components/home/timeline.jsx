@@ -10,7 +10,7 @@ export default function Timeline() {
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4 animate-fade-down animate-duration-[3000ms] animate-delay-[1600ms]">
+      <div className="mx-auto max-w-2xl gap-8 overflow-hidden lg:mx-0 lg:max-w-none flex flex-col-reverse lg:grid lg:grid-cols-4 animate-fade-down animate-duration-[3000ms] animate-delay-[1600ms]">
         {
           timelineItems.map(
           ({  dateTime,

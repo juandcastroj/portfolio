@@ -32,7 +32,7 @@ export const timelineItems = [
       dateTime: '2021-12',
     },
     {
-      company: 'SessionForward Inc (USA)',
+      company: 'SessionForward (USA)',
       labor: 'Software Developer',
       logo: SessionForwardLogo,
       description:
