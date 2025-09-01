@@ -2,7 +2,7 @@
 export const social = [
       {
       name: 'CV',
-      href: '/CV JUAN DAVID JARAMILLO.pdf',
+      href: '/JUAN DAVID JARAMILLO.pdf',
       // target="_blank",
       // rel="noopener noreferrer",
       icon: (props) => (
