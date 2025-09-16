@@ -12,7 +12,7 @@ export const projectsData = [
       role: 'Web Developer',
       imageUrl: NuestraTierraHero,
       description: 'Web application with ecommerce section full developed by me for a Colombian environmental ONG. Using React js, Firebase for autentication and customer manage, such as Ecwid for store and products manage.',
-      url: 'https://nuestratierraco.netlify.app/',
+      url: 'https://nuestratierraco.com/',
       repo: 'https://github.com/juandcastroj/nuestratierraco'    
     },
     {
