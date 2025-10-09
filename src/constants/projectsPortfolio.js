@@ -8,7 +8,7 @@ import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 
 export const projectsData = [
     {
-      company: 'NuestraTierra Co (in progress)',
+      company: 'Corporación Nuestra Tierra',
       role: 'Web Developer',
       imageUrl: NuestraTierraHero,
       description: 'Web application with ecommerce section full developed by me for a Colombian environmental ONG. Using React js, Firebase for autentication and customer manage, such as Ecwid for store and products manage.',
