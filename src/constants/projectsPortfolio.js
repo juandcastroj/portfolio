@@ -1,3 +1,4 @@
+import HyRsasHero from '../assets/images/projects/HyRsas_hero.jpeg';
 import NuestraTierraHero from '../assets/images/projects/NuestraTierra_hero.jpeg';
 import InterkeyHero from '../assets/images/projects/Interkey_hero.jpeg';
 import SessionForwardHero from '../assets/images/projects/SessionForward_hero.jpeg';
@@ -7,6 +8,14 @@ import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
 import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 
 export const projectsData = [
+    {
+      company: 'HyR Ingeniería',
+      role: 'Frontend Developer',
+      imageUrl: HyRsasHero,
+      description: 'Landing page for a civil and mechanical engineering company fully developed by me. Using React js and Tailwind css for styles management. It includes a contact form with emailjs service integration. Also i configure the domain and corporative emails.',
+      url: 'https://ingenieriahyr.com/',
+      repo: 'https://github.com/juandcastroj/HyR_ingenieria'    
+    },
     {
       company: 'Corporación Nuestra Tierra',
       role: 'Web Developer',
