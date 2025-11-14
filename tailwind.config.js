@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
 import tailwindcssAnimated from 'tailwindcss-animated';
-
 
 export default {
   content: [
@@ -12,8 +10,8 @@ export default {
   theme: {
     extend: {
         fontFamily: {
-            monserrat: ['Montserrat', 'sans-serif'],
-            oswald: ['Oswald', 'sans-serif'],
+            Monserrat: ["Montserrat", "sans-serif"],
+            Oswald: ["Oswald", "sans-serif"],
         },
     },
   },

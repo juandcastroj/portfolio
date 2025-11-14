@@ -20,7 +20,7 @@ export default function Footer () {
               <span className="text-[#14532d] dark:text-gray-200">Made with</span> <span className="text-red-500">♥</span> <span className="text-[#14532d] dark:text-gray-200">by jdjaramillo</span>
             </p> */}
 
-            <p className="mt-8 text-lg font-semibold text-[#14532d] dark:text-gray-200 md:order-1 md:mt-0">
+            <p className="mt-8 text-lg font-Monserrat font-semibold text-[#14532d] dark:text-gray-200 md:order-1 md:mt-0">
               Ⓐ jddjaramillo  
             </p>
           </div>

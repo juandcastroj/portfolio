@@ -10,7 +10,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
         <input type="hidden" name="_next" value="http://judajar.netlify.app/email-sent" />
         <input type="hidden" name="_captcha" value="false" />
 
-        <div className="mx-auto max-w-xl lg:max-w-lg">
+        <div className="font-Monserrat mx-auto max-w-xl lg:max-w-lg">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
@@ -97,7 +97,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
             { error ? <ShowError /> : null }
             <button
               type="submit"
-              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm bg-green-800 hover:bg-green-700 dark:bg-black dark:hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm bg-green-800 hover:bg-green-700 dark:bg-gray-600 dark:hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Enviar
             </button>

@@ -3,14 +3,14 @@ import { timelineItems } from "../../constants/timeline";
 export default function Timeline() {
   return (
     <div className="mx-auto mb-12 max-w-7xl px-6 lg:px-8 pb-8 lg:pb-12">
-      <div className="mx-auto pb-12 lg:pb-20 max-w-4xl text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
+      <div className="font-Monserrat mx-auto pb-12 lg:pb-20 max-w-4xl text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
         <h2 className="text-4xl font-semibold text-green-900 dark:text-white sm:text-5xl">Experience</h2>
         <p className="mt-6 text-lg text-gray-600 dark:text-gray-200">
           Through last years I have been worked on different techs environments that allow me adapt to changes and use the most moderns develop tools to create goodlooking and good performance websites and apps.
         </p>
       </div>
 
-      <div className="mx-auto max-w-2xl gap-8 overflow-hidden lg:mx-0 lg:max-w-none flex flex-col-reverse lg:grid lg:grid-cols-4 animate-fade-down animate-duration-[3000ms] animate-delay-[1600ms]">
+      <div className="font-Monserrat mx-auto max-w-2xl gap-8 overflow-hidden lg:mx-0 lg:max-w-none flex flex-col-reverse lg:grid lg:grid-cols-4 animate-fade-down animate-duration-[3000ms] animate-delay-[1600ms]">
         {
           timelineItems.map(
           ({  dateTime,
