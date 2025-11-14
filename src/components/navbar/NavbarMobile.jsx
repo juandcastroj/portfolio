@@ -17,7 +17,7 @@ export function NavbarMobile({
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-[9999] w-full overflow-y-auto bg-gradient-to-br from-[#f8ff99] to-[#a57e12]  dark:bg-gradient-to-br dark:to-[#140824] dark:from-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-[9999] w-full h-[60%] overflow-y-auto bg-gradient-to-br from-[#faffb4] to-[#f7ff8b]  dark:bg-gradient-to-br dark:to-[#140824] dark:from-black px-6 py-6 sm:max-w-sm">
           <div className="flex items-center right-6 top-6 absolute">
             <button
               type="button"
@@ -30,14 +30,14 @@ export function NavbarMobile({
           </div>
 
           <div className="mt-28">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="py-24 flex flex-col text-center space-y-6">
+            <div className="-my-6">
+              <div className="py-8 flex flex-col text-center space-y-4 font-Monserrat">
                 {
                   navigationItems.map(({name, to}, index) => (
                   <Link
                     key={name}
                     to={to}
-                    className="block rounded-lg px-3 py-2 text-2xl font-semibold text-gray-900 dark:text-blue-200 hover:bg-gray-50"
+                    className="block rounded-lg px-3 py-3 text-3xl font-semibold text-green-900 dark:text-blue-200 hover:bg-gray-50"
                     onClick={handleMobileMenu}
                   >
                     {name}

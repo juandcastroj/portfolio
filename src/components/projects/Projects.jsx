@@ -8,7 +8,7 @@ export default function Projects() {
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
            My main projects
           </h2>
-            <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
+            <p className="mt-6 text-base sm:text-lg text-gray-600 dark:text-gray-200">
               Below is a list of my completed works and collaborations for websites and apps over the past few years as a software developer using different technologies, from Figma and canva for design, HTML, CSS, Tailwind, JavaScript, React, Vue for user interfaces, Firebase and Aws for cloud services until Node, Mysql and Postgresql for Backend and Databases, even Flutter for multiplatform mobile apps.             </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function Projects() {
                     <p className="text-base/7 font-semibold text-gray-600 dark:text-gray-200">
                       {role}
                     </p>
-                    <p className="mt-1 text-base/7 text-gray-600 dark:text-gray-200">
+                    <p className="mt-1 text-base leading-normal text-gray-600 dark:text-gray-200">
                       {description}
                     </p>
 
