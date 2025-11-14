@@ -5,7 +5,7 @@ import SessionForwardLogo from '../assets/images/timeline/SessionForward_logo.jp
 
 export const timelineItems = [
     {
-      company: 'Faram Engineering',
+      company: 'Freelancer',
       labor: 'CAD Draftsman',
       logo: FaramLogo,
       description:
@@ -27,16 +27,16 @@ export const timelineItems = [
       labor: 'Frontend Trainee',
       logo: AcademiaGeekLogo,
       description:
-        'Non-profit Bootcamp focused on frontend, where I improve my knowledge of the basics and also how to use Javascript and React js on modern projects. Besides obtained my official certification as a Frontend web developer.',
+        'Bootcamp focused on frontend, where I improve my basic programming knowledge and how to use Javascript and React js on modern projects. Besides obtained my official certification as a Frontend web developer.',
       date: 'Dec 2021',
       dateTime: '2021-12',
     },
     {
-      company: 'SessionForward (USA)',
+      company: 'SessionForward Inc',
       labor: 'Software Developer',
       logo: SessionForwardLogo,
       description:
-        'Develop whole landing pages, customized to design specifications or with my own proposal for different small and medium-sized enterprises. Also implemented new features for sessionforward.com and abte.st, ABtesting web apps services using Vue js framework, Tailwind css, Postgresql and Node js in my first experience with backend.',
+        'Develop full landing pages, customized to specific mockups designs or with my own proposal for different customers. Also implemented new features for sessionforward.com and abte.st, ABtesting web platforms using Vue js framework, Tailwind css, Postgresql and Node js in my first experience with backend develop.',
       date: 'Jun 2022',
       dateTime: '2022-05',
     },

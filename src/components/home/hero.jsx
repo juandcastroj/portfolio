@@ -17,10 +17,10 @@ export default function Hero() {
               </h1>
               <div className="my-2 sm:my-8 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-base font-Monserrat md:text-xl lg:mt-6 font-normal text-gray-500 dark:text-gray-200">
-                    Specialized on frontend and app UI/UX, with a full-stack mindset.
-                      I enjoy learning and sharing knowledge, 
-                    and I’m passionate about technology, music, boxing and cycling.
-                    I strongly believe these tools can help us build a better world for everyone. Ⓐ
+                    Specialized on Frontend and app UI/UX, with a full-stack mindset.
+                    I enjoy learning and sharing knowledge, 
+                    and I’m passionate about technology, music and cycling.
+                    I strongly believe these tools can help us build a better world for everyone.
                 </p>
               </div>
           </div>

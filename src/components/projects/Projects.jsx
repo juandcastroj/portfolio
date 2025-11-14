@@ -4,12 +4,12 @@ export default function Projects() {
   return (
     <div className="py-20 md:py-28 animate-fade-down animate-duration-[1500ms] animate-delay-400">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16">
-        <div className="text-center font-Monserrat xl:col-span-2 mb-12 mx-auto max-w-4xl">
+        <div className="text-center font-Monserrat xl:col-span-2 mb-12 mx-auto max-w-5xl">
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
-            Main projects
+           My main projects
           </h2>
             <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-              Below is a list of my completed works and collaborations for websites over the past few years as a software developer using different technologies, from Figma, HTML, JavaScript vanilla, React js, Vue js for frontend until node and postgresql for backend, even Flutter for multiplatform mobile development.             </p>
+              Below is a list of my completed works and collaborations for websites and apps over the past few years as a software developer using different technologies, from Figma and canva for design, HTML, CSS, Tailwind, JavaScript, React, Vue for user interfaces, Firebase and Aws for cloud services until Node, Mysql and Postgresql for Backend and Databases, even Flutter for multiplatform mobile apps.             </p>
         </div>
 
         <ul role="list" className="font-Monserrat space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
