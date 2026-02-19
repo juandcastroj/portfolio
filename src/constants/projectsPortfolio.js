@@ -33,20 +33,20 @@ export const projectsData = [
       repo: 'https://bitbucket.org/maheshcasiraghi/interkey_web_2023/src/develop/'    
     },
     {
-      company: 'SessionForward Inc',
-      role: 'Web developer',
-      imageUrl: SessionForwardHero,
-      description: 'ABtesting web service application with components and some complete sections (onboarding, profile, etc) made by me. It was my first experience using Vue js framework in the dashboard and Node js for backend.',
-      url: 'https://www.sessionforward.com/login',
-      repo: 'https://bitbucket.org/sessionforward/sessionforward_web/src/master/'    
-    },
-    {
       company: 'Siin shop',
       role: 'Frontend developer',
       imageUrl: SiinHero,
       description: 'Developed some sections (all previous main landing section and actual contact form, privacy policy and terms) following mockup design guidelines and high level interactivity specifications such as advanced animations. It features Arabic and English languages.',
       url: 'https://siin.shop/en',
       repo: 'https://bitbucket.org/sf-abtest/siin_shop_web/src/master/'
+    },
+    {
+      company: 'SessionForward Inc',
+      role: 'Web developer',
+      imageUrl: SessionForwardHero,
+      description: 'ABtesting web service application with components and some complete sections (onboarding, profile, etc) made by me. It was my first experience using Vue js framework in the dashboard and Node js for backend.',
+      url: 'https://www.sessionforward.com/login',
+      repo: 'https://bitbucket.org/sessionforward/sessionforward_web/src/master/'    
     },
     {
       company: 'ABtest',
