@@ -8,28 +8,26 @@ export default function Projects() {
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
            My main projects
           </h2>
-            <p className="mt-6 text-base sm:text-lg text-gray-600 dark:text-gray-200">
+            <p className="mt-6 text-base tracking-tighter text-gray-600 dark:text-gray-200">
               Below is a list of my completed works and collaborations for websites and apps over the past few years as a software developer using different technologies, from Figma and canva for design, HTML, CSS, Tailwind, JavaScript, React, Vue for user interfaces, Firebase and Aws for cloud services until Node, Mysql and Postgresql for Backend and Databases, even Flutter for multiplatform mobile apps.             </p>
         </div>
 
-        <ul role="list" className="font-Monserrat space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
+        <ul role="list" className="font-Monserrat grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
 
           {  projectsData.map(
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-6 lg:p-3 xl:pr-12
-                           dark:border-0 rounded-3xl shadow-md dark:hover:shadow-md 
+                className="flex flex-col gap-4 p-6 dark:border-0 rounded-3xl shadow-md dark:hover:shadow-md 
                            bg-white/30 hover:bg-white/40 backdrop-blur-md
                            dark:bg-white/10 dark:hover:bg-white/20 " >
-              {/* <iframe src={url} className="aspect-square w-[24rem] md:w-96 xl:w-[40rem] h-80 flex-none rounded-none md:rounded-2xl object-cover"></iframe> */}
                   <img
                     alt={company}
                     src={imageUrl}
-                    className="w-96 xl:w-[36rem] rounded-lg md:rounded-2xl"
+                    className="w-full h-auto rounded-lg md:rounded-2xl object-contain"
                   />
 
-                <div className="max-w-xl flex-auto pt-2 lg:pt-6 text-justify">
+                <div className="flex-auto pt-2 text-justify">
                     <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">
                       {company}
                     </h3>
