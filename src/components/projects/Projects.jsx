@@ -4,9 +4,9 @@ export default function Projects() {
   return (
     <div className="py-20 md:py-28 animate-fade-down animate-duration-[1500ms] animate-delay-400">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16">
-        <div className="text-center font-Monserrat xl:col-span-2 mb-12 mx-auto max-w-5xl">
+        <div className="text-center font-Monserrat xl:col-span-2 mb-12 mx-auto max-w-4xl">
           <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
-           My main projects
+           My projects
           </h2>
             <p className="mt-6 text-base tracking-tighter text-gray-600 dark:text-gray-200">
               Below is a list of my completed works and collaborations for websites and apps over the past few years as a software developer using different technologies, from Figma and canva for design, HTML, CSS, Tailwind, JavaScript, React, Vue for user interfaces, Firebase and Aws for cloud services until Node, Mysql and Postgresql for Backend and Databases, even Flutter for multiplatform mobile apps.             </p>
@@ -18,27 +18,27 @@ export default function Projects() {
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-4 p-6 dark:border-0 rounded-3xl shadow-md dark:hover:shadow-md 
+                className="flex flex-col gap-4 p-3 dark:border-0 rounded-3xl shadow-md dark:hover:shadow-md 
                            bg-white/30 hover:bg-white/40 backdrop-blur-md
                            dark:bg-white/10 dark:hover:bg-white/20 " >
                   <img
                     alt={company}
                     src={imageUrl}
-                    className="w-full h-auto rounded-lg md:rounded-2xl object-contain"
+                    className="w-full h-auto rounded-2xl object-contain"
                   />
 
                 <div className="flex-auto pt-2 text-justify">
-                    <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">
+                    <h3 className="text-base font-bold text-green-900 dark:text-blue-300">
                       {company}
                     </h3>
-                    <p className="text-base/7 font-semibold text-gray-600 dark:text-gray-200">
+                    <p className="text-base font-semibold text-gray-600 dark:text-gray-200">
                       {role}
                     </p>
-                    <p className="mt-1 text-base leading-normal text-gray-600 dark:text-gray-200">
+                    <p className="text-sm leading-normal text-gray-600 dark:text-gray-200">
                       {description}
                     </p>
 
-                  <div className="flex items-center gap-4 mt-4 sm:mt-8 flex-row">
+                  <div className="flex items-center gap-4 mt-2 flex-row">
                     <a
                       href={url} target="_blank" rel="noopener noreferrer"
                       className="text-green-900 hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"

@@ -12,7 +12,7 @@ export default function Contact() {
             <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-200 sm:text-5xl">
               Get in touch 📧
             </h2>
-              <p className="mt-8 text-lg/8 text-gray-600 dark:text-gray-200">
+              <p className="mt-8 text-base text-gray-600 dark:text-gray-200">
                   To work together on anything related to my current tech stack or dive into new project ideas.
               </p>
             <dl className="mt-10 space-y-4 text-xl sm:text-base/7 text-gray-600">
