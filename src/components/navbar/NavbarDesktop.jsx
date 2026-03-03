@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "./themeSwitcher";
@@ -40,7 +41,7 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
 
         <div
           className={`hidden lg:flex lg:gap-x-12 fixed top-8 rounded-full px-4 py-2 items-center backdrop-blur-xl transition-colors duration-300 ${
-            hasBackground ? "bg-white/40 dark:bg-[#471f8d]/50 shadow-md backdrop-blur-md" 
+            hasBackground ? "bg-white/40 dark:bg-[#311f5280] shadow-md backdrop-blur-md" 
             : "bg-transparent"
           }`}
         >
@@ -68,3 +69,13 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
     </>
   );
 }
+
+NavbarDesktop.propTypes = {
+  navigationItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  handleMobileMenu: PropTypes.func.isRequired,
+};
