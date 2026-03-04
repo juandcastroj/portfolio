@@ -13,15 +13,16 @@ export default function Timeline() {
       <div className="font-Monserrat mx-auto max-w-2xl gap-8 overflow-hidden lg:mx-0 lg:max-w-none flex flex-col-reverse lg:grid lg:grid-cols-4 animate-fade-down animate-duration-[3000ms] animate-delay-[1600ms]">
         {
           timelineItems.map(
-          ({  dateTime,
+          ({  id,
+              dateTime,
               date,
               logo,
               company,
               labor,
               description,
-            }, index ) => (
+            }) => (
 
-            <div key={index}>
+            <div key={id}>
               <time
                 dateTime={dateTime}
                 className="flex items-center text-base font-semibold text-green-900 dark:text-gray-200"

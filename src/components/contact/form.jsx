@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export function Form({ firstName, lastName, email, message, handleChange, error, ShowError }) {
   return (
     <>
@@ -107,3 +109,13 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
     </>
   );
 }
+
+Form.propTypes = {
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  error: PropTypes.bool.isRequired,
+  ShowError: PropTypes.elementType.isRequired,
+};

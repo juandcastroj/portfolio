@@ -3,8 +3,19 @@ import BitheaderLogo from '../assets/images/timeline/Bitheader_logo.jpeg';
 import AcademiaGeekLogo from '../assets/images/timeline/AcademiaGeek_logo.jpeg';
 import SessionForwardLogo from '../assets/images/timeline/SessionForward_logo.jpeg';
 
-export const timelineItems = [
+export type TimelineItem = {
+  id: string
+  company: string
+  labor: string
+  logo: string
+  description: string
+  date: string
+  dateTime: `${number}-${number}`
+}
+
+export const timelineItems: TimelineItem[] = [
     {
+      id: '1',
       company: 'Freelancer',
       labor: 'CAD Draftsman',
       logo: FaramLogo,
@@ -14,6 +25,7 @@ export const timelineItems = [
       dateTime: '2019-09',
     },
     {
+      id: '2',
       company: 'Bitheader',
       labor: 'Developer Jr',
       logo: BitheaderLogo,
@@ -23,6 +35,7 @@ export const timelineItems = [
       dateTime: '2021-03',
     },
     {
+      id: '3',
       company: 'Academia Geek',
       labor: 'Frontend Trainee',
       logo: AcademiaGeekLogo,
@@ -32,6 +45,7 @@ export const timelineItems = [
       dateTime: '2021-12',
     },
     {
+      id: '4',
       company: 'SessionForward Inc',
       labor: 'Software Developer',
       logo: SessionForwardLogo,
