@@ -1,23 +1,27 @@
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/header'
-import Footer from './components/footer'
-import HomeRoute from './routes/HomeRoute';
-import Search from './routes/MoviesRoute';
-import Tiktaktoe from './routes/GameRoute';
-import ContactRoute from './routes/ContactRoute';
-import ProjectsRoute from './routes/ProjectsRoute';
-import StackRoute from './routes/StackRoute';
+import Header from './components/header.jsx'
+import Footer from './components/footer.jsx'
+import HomeRoute from './routes/HomeRoute.jsx';
+import Search from './routes/MoviesRoute.jsx';
+import Tiktaktoe from './routes/GameRoute.jsx';
+import ContactRoute from './routes/ContactRoute.jsx';
+import ProjectsRoute from './routes/ProjectsRoute.jsx';
+import StackRoute from './routes/StackRoute.jsx';
 import './assets/css/bg.css'
-import TodoRoute from './routes/TodoRoute';
-import EmailSentRoute from './routes/EmailSentRoute';
-import BlogRoute from './routes/BlogRoute';
-import Background from './components/Background';
+import TodoRoute from './routes/TodoRoute.jsx';
+import EmailSentRoute from './routes/EmailSentRoute.jsx';
+import BlogRoute from './routes/BlogRoute.jsx';
+import Background from './components/Background.tsx';
+import { useContext } from 'react';
+import { ThemeContext } from './contexts/ThemeContext.tsx';
 
 export default function App() {
 
+  const { theme } = useContext(ThemeContext)
+
   return (
       <>
-        <Background theme="dark" />
+        <Background theme={theme} />
         <Header/>
           <main className="isolate antialiased">
             <Routes>
