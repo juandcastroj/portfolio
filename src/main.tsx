@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ThemeProvider } from './contexts/ThemeContext.jsx'
+import { ThemeProvider } from './contexts/ThemeContext.tsx'
 import './assets/css/tailwind.css'
-import App from './App.tsx'
+import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
 
