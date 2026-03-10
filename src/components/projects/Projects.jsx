@@ -1,4 +1,4 @@
-import { projectsData } from "../../constants/projectsPortfolio";
+import { projects } from "../../constants/projects";
 
 export default function Projects() {
   return (
@@ -14,7 +14,7 @@ export default function Projects() {
 
         <ul role="list" className="font-Monserrat grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
 
-          {  projectsData.map(
+          {  projects.map(
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}

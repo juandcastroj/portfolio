@@ -1,7 +1,7 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import PropTypes from "prop-types";
-import ThemeSwitcher from "./themeSwitcher";
+import ThemeSwitcher from "./ThemeSwitcher";
 import { Link } from "react-router-dom";
 
 export function NavbarMobile({

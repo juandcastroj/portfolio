@@ -7,7 +7,7 @@ import ABtestHero from '../assets/images/projects/ABtest_hero.jpeg';
 import TahsinHero from '../assets/images/projects/Tahsin_hero.jpeg';
 import CoffeeStrapHero from '../assets/images/projects/CoffeeStrap.jpeg';
 
-export const projectsData = [
+export const projects = [
     {
       company: 'Corporación Nuestra Tierra',
       role: 'Web Developer',
