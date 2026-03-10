@@ -1,5 +1,5 @@
-import Hero from "../components/home/hero.tsx";
-import Timeline from "../components/home/timeline.tsx";
+import Hero from "../components/home/Hero.tsx";
+import Timeline from "../components/home/Timeline.tsx";
 
 export default function HomePage() {
     return (
