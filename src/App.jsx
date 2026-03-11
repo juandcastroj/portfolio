@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header.tsx'
 import Footer from './components/Footer.tsx'
-import HomeRoute from './routes/HomeRoute.jsx';
+import HomeRoute from './routes/HomeRoute.tsx';
 import Search from './routes/MoviesRoute.jsx';
 import Tiktaktoe from './routes/GameRoute.jsx';
 import ContactRoute from './routes/ContactRoute.jsx';

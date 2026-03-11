@@ -1,7 +1,19 @@
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import { Form } from './form'
+import { Form } from './Form.tsx'
+import { useForm } from '../../hooks/useForm.ts'
 
 export default function Contact() {
+
+  const {
+    firstName,
+    lastName,
+    email,
+    message,
+    handleChange,
+    handleSubmit,
+    error,
+    ShowError,
+  } = useForm()
 
   return (
     <div className="relative isolate">
@@ -55,7 +67,16 @@ export default function Contact() {
           </div>
         </div>
 
-        <Form />
+        <Form
+          firstName={firstName}
+          lastName={lastName}
+          email={email}
+          message={message}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          error={error}
+          ShowError={ShowError}
+        />
         
       </div>
     </div>
