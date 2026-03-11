@@ -1,4 +1,4 @@
-import { projects } from "../../constants/projects";
+import { projects } from "../../constants/projects.ts";
 
 export default function Projects() {
   return (

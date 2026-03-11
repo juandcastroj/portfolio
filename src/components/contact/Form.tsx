@@ -1,19 +1,36 @@
-import PropTypes from "prop-types";
+type FormProps = {
+  firstName: string
+  lastName: string
+  email: string
+  message: string
+  handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
+  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void
+  error: boolean
+  ShowError: React.ComponentType
+}
 
-export function Form({ firstName, lastName, email, message, handleChange, error, ShowError }) {
+export function Form({
+  firstName,
+  lastName,
+  email,
+  message,
+  handleChange,
+  handleSubmit,
+  error,
+  ShowError
+}: FormProps) {
   return (
-    <>
-      <form
-        action="https://formsubmit.co/juandavid4130@gmail.com"
-        method="POST"
-        className="px-6 lg:px-8 py-4 sm:py-20 lg:py-28 animate-fade-down sm:animate-fade-left"
-      >
-        {/* Config extra para seguridad */}
-        <input type="hidden" name="_next" value="http://judajar.netlify.app/email-sent" />
-        <input type="hidden" name="_captcha" value="false" />
+    <form
+      action="https://formsubmit.co/juandavid4130@gmail.com"
+      method="POST"
+      onSubmit={handleSubmit}
+      className="px-6 lg:px-8 py-4 sm:py-20 lg:py-28 animate-fade-down sm:animate-fade-left"
+    >
+      <input type="hidden" name="_next" value="http://judajar.netlify.app/email-sent" />
+      <input type="hidden" name="_captcha" value="false" />
 
-        <div className="font-Monserrat mx-auto max-w-xl lg:max-w-lg">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div className="font-Monserrat mx-auto max-w-xl lg:max-w-lg">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
                 htmlFor="first-name"
@@ -93,29 +110,18 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
                 />
               </div>
             </div>
-          </div>
+      </div>
 
-          <div className="mt-8 flex justify-end">
-            { error ? <ShowError /> : null }
-            <button
+        <div className="mt-8 flex justify-end">
+          {error ? <ShowError /> : null}
+
+          <button
               type="submit"
               className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm bg-green-800 hover:bg-green-700 dark:bg-gray-600 dark:hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-            >
-              Enviar
-            </button>
-          </div>
+            >            Enviar
+          </button>
         </div>
-      </form>
-    </>
-  );
+      </div>
+    </form>
+  )
 }
-
-Form.propTypes = {
-  firstName: PropTypes.string.isRequired,
-  lastName: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired,
-  handleChange: PropTypes.func.isRequired,
-  error: PropTypes.bool.isRequired,
-  ShowError: PropTypes.elementType.isRequired,
-};
