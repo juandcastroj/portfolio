@@ -4,12 +4,12 @@ import Footer from './components/Footer.tsx'
 import HomeRoute from './routes/HomeRoute.tsx';
 import Search from './routes/MoviesRoute.jsx';
 import Tiktaktoe from './routes/GameRoute.jsx';
-import ContactRoute from './routes/ContactRoute.jsx';
-import ProjectsRoute from './routes/ProjectsRoute.jsx';
-import StackRoute from './routes/StackRoute.jsx';
+import ContactRoute from './routes/ContactRoute.tsx';
+import ProjectsRoute from './routes/ProjectsRoute.tsx';
+import StackRoute from './routes/StackRoute.tsx';
 import './assets/css/bg.css'
 import TodoRoute from './routes/TodoRoute.jsx';
-import EmailSentRoute from './routes/EmailSentRoute.jsx';
+import EmailSentRoute from './routes/EmailSentRoute.tsx';
 import BlogRoute from './routes/BlogRoute.jsx';
 import Background from './components/Background.tsx';
 import { useContext } from 'react';

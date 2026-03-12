@@ -1,4 +1,4 @@
-import EmailSent from "../components/contact/EmailSent";
+import EmailSent from "../components/contact/EmailSent.tsx";
 
 export default function EmailSentRoute() { 
     return (

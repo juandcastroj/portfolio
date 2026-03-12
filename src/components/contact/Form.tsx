@@ -26,7 +26,7 @@ export function Form({
       onSubmit={handleSubmit}
       className="px-6 lg:px-8 py-4 sm:py-20 lg:py-28 animate-fade-down sm:animate-fade-left"
     >
-      <input type="hidden" name="_next" value="http://judajar.netlify.app/email-sent" />
+      <input type="hidden" name="_next" value="http://juandajar.netlify.app/email-sent" />
       <input type="hidden" name="_captcha" value="false" />
 
       <div className="font-Monserrat mx-auto max-w-xl lg:max-w-lg">
@@ -34,7 +34,7 @@ export function Form({
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-green-900 dark:text-gray-200"
               >
                 Nombre
               </label>
@@ -54,7 +54,7 @@ export function Form({
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-green-900 dark:text-gray-200"
               >
                 Apellido
               </label>
@@ -74,7 +74,7 @@ export function Form({
             <div className="sm:col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-green-900 dark:text-gray-200"
               >
                 Correo
               </label>
@@ -94,7 +94,7 @@ export function Form({
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-green-900 dark:text-gray-200"
               >
                 Mensaje
               </label>

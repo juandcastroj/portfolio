@@ -3,7 +3,7 @@ import { timelineItems } from "../../constants/timeline";
 export default function Timeline() {
   return (
     <div className="mx-auto mb-12 max-w-7xl px-6 lg:px-8 pb-8 lg:pb-12">
-      <div className="font-Monserrat mx-auto pb-12 lg:pb-20 max-w-3xl text-center animate-fade-down animate-duration-[3000ms] animate-delay-[1000ms]">
+      <div className="font-Monserrat mx-auto pb-12 lg:pb-20 max-w-3xl text-center animate-fade-down animate-duration-[1500ms] animate-delay-[500ms]">
         <h2 className="text-4xl font-semibold text-green-900 dark:text-white sm:text-5xl">Experience</h2>
         <p className="mt-4 text-base text-gray-600 dark:text-gray-200">
           Through last years I have been worked on different techs environments that allow me adapt to changes and use the most moderns develop tools to create goodlooking and good performance websites and apps.
