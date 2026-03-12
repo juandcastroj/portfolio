@@ -34,7 +34,7 @@ export function useForm() {
       setError(false);
     }
 
-    console.log(firstName, lastName, email, message);
+    //console.log(firstName, lastName, email, message);
     setForm({ firstName: "", lastName: "", email: "", message: "" });
   };
 
